@@ -34,39 +34,44 @@
 
     <form
       action=""
-      className="w-[90%] max-w-2xl mx-auto my-20 p-3 bg-gray-200 rounded-lg grid sm:grid-cols-2 gap-2"
+      class="w-[90%] max-w-2xl mx-auto my-20 p-3 bg-gray-200 rounded-lg grid sm:grid-cols-2 gap-2"
     >
-      <EditInput name="" label="First Name" />
-      <EditInput name="" label="Last Name" />
-      <EditInput name="" label="Email" type="email" />
-      <EditInput name="" label="Phone Number" />
-      <EditInput name="" label="Address" />
-      <EditInput name="" label="State" />
-      <EditInput name="" label="City" />
-      <EditInput name="" label="Zip Code" />
+      <input type="text" name="" placeholder="First Name" class="edit-input" />
+      <input type="text" name="" placeholder="Last Name" class="edit-input" />
+      <input name="" placeholder="Email" type="email" class="edit-input" />
+      <input
+        type="text"
+        name=""
+        placeholder="Phone Number"
+        class="edit-input"
+      />
+      <input type="text" name="" placeholder="Address" class="edit-input" />
+      <input type="text" name="" placeholder="State" class="edit-input" />
+      <input type="text" name="" placeholder="City" class="edit-input" />
+      <input type="text" name="" placeholder="Zip Code" class="edit-input" />
 
-      {/* CARD DETAILS */}
-      <div className="relative">
+      <!-- {/* CARD DETAILS */} -->
+      <div class="relative">
         <input
           type="text"
           name="year"
           placeholder="Valid Card Number"
-          className="block w-full rounded-md py-2 px-4 outline-none text bg-white border border-gray-500 mt-4"
+          class="block w-full rounded-md py-2 px-4 outline-none text bg-white border border-gray-500 mt-4"
           maxlength="{16}"
           required
         />
         <img
           src="https://cffunnelstemplates.com/demo/n-95-mask/assets/images/cards.png"
           alt=""
-          className="w-3/12 absolute top-1/2 right-2"
+          class="w-3/12 absolute top-1/2 right-2"
         />
       </div>
 
-      <div className="grid grid-cols-3 items-center gap-2">
+      <div class="grid grid-cols-3 items-center gap-2">
         <select
           name=""
           id=""
-          className="border rounded-md border-black p-2 h-fit w-full mt-2"
+          class="border rounded-md border-black p-2 h-fit w-full mt-2"
         >
           <option value="0">Months</option>
           <option value="1">January</option>
@@ -87,25 +92,64 @@
           type="text"
           name="year"
           placeholder="Year"
-          className="block
-        w-full rounded-md py-2 px-4 outline-none text bg-white border-gray-500
-        mt-2"
+          class="block w-full rounded-md py-2 px-4 outline-none text bg-white border-gray-500 mt-2"
           maxlength="{4}"
           required
         />
-        <input type={"text"} name="year" // value="" // onChange={() => {}}
-        placeholder={"CCV"} className="block w-full rounded-md py-2 px-4
-        outline-none text bg-white border border-gray-500 mt-2" maxLength={3}
-        required />
+        <input
+          type="text"
+          name="year"
+          value=""
+          placeholder="CCV"
+          class="block w-full rounded-md py-2 px-4 outline-none text bg-white border border-gray-500 mt-2"
+          maxlength="{3}"
+          required
+        />
       </div>
 
-      <div className="text-center sm:col-span-2">
+      <div class="text-center sm:col-span-2">
         <button
-          className="bg-blue-500 rounded-md text-white font-semibold text-2xl p-3 mt-6"
+          class="bg-blue-500 rounded-md text-white font-semibold text-2xl p-3 mt-6"
         >
           Complete Your Order
         </button>
       </div>
     </form>
+
+    <div>
+      <div
+        class="bg-[url(https://cffunnelstemplates.com/demo/cafe-and-bar/assets/images/cafe-last-banner.jpg)] text-white py-10 bg-fixed"
+      >
+        <div class="text-center text-white">
+          <FaInstagram class="text-6xl mx-auto" />
+          <div class="text-2xl md;text-6xl font-bold">#YourBrandName</div>
+          <div class="text-2xl my-6">Take Selfie & Get 25% OFF flat</div>
+          <div class="max-w-lg mx-auto text-base">
+            Etiam luctus turpis urna, at pretium nisl suscipit id. Vestibulum
+            tortor lorem, suscipit scelerisque egestas sed, tempus non velit.
+          </div>
+
+          <button class="bg-orangee text-white font-semibold text-2xl p-3 mt-6">
+            Join Our Community
+          </button>
+        </div>
+      </div>
+      <div
+        class="bg-neutral-900 p-4 flex justify-between items-center text-white"
+      >
+        <div class="text-2xl">LOGO</div>
+
+        <div class="flex gap-2">
+          <div class="flex gap-2 items-center">
+            <FaFacebookSquare />
+            Facebook
+          </div>
+          <div class="flex gap-2 items-center">
+            <FaInstagram />
+            Instagram
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

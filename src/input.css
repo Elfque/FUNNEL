@@ -18,3 +18,6 @@
 .funnel3-blue-button {
   @apply bg-orange-500 text-white py-5 px-10 rounded-lg text-xl font-semibold;
 }
+.edit-input {
+  @apply block w-full rounded-md py-2 px-4 outline-none text-sm bg-white border border-gray-500 mt-4;
+}
