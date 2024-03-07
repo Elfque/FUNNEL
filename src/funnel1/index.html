@@ -35,7 +35,9 @@
             vel.
           </div>
 
-          <button class="bg-orangee text-white font-semibold text-2xl p-3 mt-6">
+          <button
+            class="bg-orangee text-white font-semibold text-2xl py-3 px-6 mt-6 rounded-lg open-btn"
+          >
             Join Our Community
           </button>
         </div>
@@ -63,9 +65,9 @@
         </div>
 
         <button
-          class="bg-transparent border-2 border-black p-3 font-semibold mt-4"
+          class="bg-transparent border-2 border-black p-3 font-semibold mt-4 open-btn"
         >
-          JOIN OUR COMMUNITY{" "}
+          JOIN OUR COMMUNITY
         </button>
       </div>
       <div>
@@ -104,10 +106,10 @@
         </div>
 
         <div>FOLLOW JOHN DOE</div>
-        <div class="flex gap-4 text-xl text-orangee">
-          <FaFacebookSquare />
-          <FaTwitterSquare />
-          <FaInstagram />
+        <div class="flex gap-4 text-xl text-orangee mt-2">
+          <img src="./img/instagram-orange.svg" alt="" class="w-6" />
+          <img src="./img/facebook.svg" alt="" class="w-8" />
+          <img src="./img/twitter.svg" alt="" class="w-6" />
         </div>
       </div>
     </div>
@@ -139,21 +141,21 @@
             lectus. Praesent vel nibh egestas.
           </div>
 
-          <div class="grid grid-cols-2">
+          <div class="grid grid-cols-2 mt-4">
             <div class="flex items-center gap-2">
-              <FiCheckCircle class="text-orangee" />{" "}
+              <img src="./img/check.svg" alt="" class="w-6" />
               <div>Lorem, ipsum dolor.</div>
             </div>
             <div class="flex items-center gap-2">
-              <FiCheckCircle class="text-orangee" />{" "}
+              <img src="./img/check.svg" alt="" class="w-6" />
               <div>Lorem, ipsum dolor.</div>
             </div>
             <div class="flex items-center gap-2">
-              <FiCheckCircle class="text-orangee" />{" "}
+              <img src="./img/check.svg" alt="" class="w-6" />
               <div>Lorem, ipsum dolor.</div>
             </div>
             <div class="flex items-center gap-2">
-              <FiCheckCircle class="text-orangee" />{" "}
+              <img src="./img/check.svg" alt="" class="w-6" />
               <div>Lorem, ipsum dolor.</div>
             </div>
           </div>
@@ -182,7 +184,9 @@
           Praesent vel nibh egestas.
         </div>
 
-        <button class="bg-orangee text-white font-semibold text-2xl p-3 mt-6">
+        <button
+          class="bg-orangee text-white font-semibold text-2xl p-3 mt-6 open-btn"
+        >
           Join Our Community
         </button>
       </div>
@@ -216,7 +220,9 @@
           Praesent vel nibh egestas.
         </div>
 
-        <button class="bg-orangee text-white font-semibold text-2xl p-3 mt-6">
+        <button
+          class="bg-orangee text-white font-semibold text-2xl p-3 mt-6 open-btn"
+        >
           Join Our Community
         </button>
       </div>
@@ -251,7 +257,9 @@
             lectus. Praesent vel nibh egestas.
           </div>
 
-          <button class="bg-orangee text-white font-semibold text-2xl p-3 mt-6">
+          <button
+            class="bg-orangee text-white font-semibold text-2xl p-3 mt-6 open-btn"
+          >
             Join Our Community
           </button>
         </div>
@@ -283,7 +291,9 @@
             lectus. Praesent vel nibh egestas.
           </div>
 
-          <button class="bg-orangee text-white font-semibold text-2xl p-3 mt-6">
+          <button
+            class="bg-orangee text-white font-semibold text-2xl p-3 mt-6 open-btn"
+          >
             Join Our Community
           </button>
         </div>
@@ -439,19 +449,22 @@
     <!-- FOOTER -->
     <div>
       <div
-        class="bg-[url(https://cffunnelstemplates.com/demo/cafe-and-bar/assets/images/cafe-last-banner.jpg)] text-white py-10 bg-fixed"
+        class="bg-[url(https://cffunnelstemplates.com/demo/cafe-and-bar/assets/images/cafe-last-banner.jpg)] text-white py-10 bg-fixed bg-no-repeat bg-cover"
       >
         <div class="text-center text-white">
-          <FaInstagram class="text-6xl mx-auto" />
-          <div class="text-2xl md;text-6xl font-bold">#YourBrandName</div>
+          <img src="./img/instagram.svg" alt="" class="mx-auto w-16 mb-8" />
+
+          <div class="text-2xl md:text-6xl font-bold">#YourBrandName</div>
           <div class="text-2xl my-6">Take Selfie & Get 25% OFF flat</div>
           <div class="max-w-lg mx-auto text-base">
             Etiam luctus turpis urna, at pretium nisl suscipit id. Vestibulum
             tortor lorem, suscipit scelerisque egestas sed, tempus non velit.
           </div>
 
-          <button class="bg-orangee text-white font-semibold text-2xl p-3 mt-6">
-            Join Our Community
+          <button
+            class="bg-orangee text-white font-semibold text-xl py-3 px-6 mt-6"
+          >
+            <a href="/src/funnel1/upsell.html"> FOLLOW ON INSTAGRAM </a>
           </button>
         </div>
       </div>
@@ -472,5 +485,60 @@
         </div>
       </div>
     </div>
+
+    <!-- MODAL -->
+    <div class="modal hidden bg-white text-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6 cancel-icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18 18 6M6 6l12 12"
+        />
+      </svg>
+
+      <div class="text-3xl text-[#323232] font-bold">
+        Tell Us How to Get In Touch
+      </div>
+      <div class="text-center font-semibold">Complete the form below.</div>
+
+      <form action="" class="grid gap-4 my-6">
+        <div class="form-control white">
+          <input type="text" placeholder="First Name" required />
+          <img src="./img/name.svg" alt="" class="" />
+        </div>
+        <div class="form-control white">
+          <input type="email" placeholder="Email Address" required />
+          <img src="./img/mail.svg" alt="" class="" />
+        </div>
+      </form>
+
+      <div class="text-center">
+        <button
+          class="text-white py-3 px-6 bg-orange-500 text-xl font-semibold mt-6"
+        >
+          Click To Sign Up
+        </button>
+      </div>
+
+      <div class="font-light text-sm mt-4">
+        Your privacy is important to us and we will not spam you. By signing up
+        you'll also receive access to business tips and exclusive offers. View
+        our Privacy Policy.
+      </div>
+    </div>
+
+    <!-- OVERLAY -->
+    <div
+      class="fixed left-0 top-0 bg-black/30 w-screen h-screen z-10 overlay hidden"
+    ></div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
