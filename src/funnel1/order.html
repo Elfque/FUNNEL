@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      class="bg-[url(https://cffunnelstemplates.com/demo/cafe-and-bar/assets/images/cafe-bar-banner.jpg)]"
+    >
+      <div class="py-4 px-10 flex justify-between items-center text-white">
+        <div class="text-2xl">LOGO</div>
+
+        <div class="flex gap-2 font-semibold">
+          <div>CALL:</div>
+          <a href="tel: 000000000">00000000000</a>
+        </div>
+      </div>
+
+      <div class="flex-center text-center h-[60vh] px-4 text-white">
+        <div>
+          <div class="max-w-[60rem] mx-auto text-2xl md:text-6xl font-bold">
+            CLAIM! YOUR FREE OFFER
+          </div>
+          <div class="max-w-xl mx-auto my-6">
+            Etiam luctus turpis urna, at pretium nisl suscipit id. Vestibulum
+            tortor lorem, suscipit scelerisque egestas sed, tempus non velit.
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <form
+      action=""
+      className="w-[90%] max-w-2xl mx-auto my-20 p-3 bg-gray-200 rounded-lg grid sm:grid-cols-2 gap-2"
+    >
+      <EditInput name="" label="First Name" />
+      <EditInput name="" label="Last Name" />
+      <EditInput name="" label="Email" type="email" />
+      <EditInput name="" label="Phone Number" />
+      <EditInput name="" label="Address" />
+      <EditInput name="" label="State" />
+      <EditInput name="" label="City" />
+      <EditInput name="" label="Zip Code" />
+
+      {/* CARD DETAILS */}
+      <div className="relative">
+        <input
+          type="text"
+          name="year"
+          placeholder="Valid Card Number"
+          className="block w-full rounded-md py-2 px-4 outline-none text bg-white border border-gray-500 mt-4"
+          maxlength="{16}"
+          required
+        />
+        <img
+          src="https://cffunnelstemplates.com/demo/n-95-mask/assets/images/cards.png"
+          alt=""
+          className="w-3/12 absolute top-1/2 right-2"
+        />
+      </div>
+
+      <div className="grid grid-cols-3 items-center gap-2">
+        <select
+          name=""
+          id=""
+          className="border rounded-md border-black p-2 h-fit w-full mt-2"
+        >
+          <option value="0">Months</option>
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+          <option value="4">April</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+
+        <input
+          type="text"
+          name="year"
+          placeholder="Year"
+          className="block
+        w-full rounded-md py-2 px-4 outline-none text bg-white border-gray-500
+        mt-2"
+          maxlength="{4}"
+          required
+        />
+        <input type={"text"} name="year" // value="" // onChange={() => {}}
+        placeholder={"CCV"} className="block w-full rounded-md py-2 px-4
+        outline-none text bg-white border border-gray-500 mt-2" maxLength={3}
+        required />
+      </div>
+
+      <div className="text-center sm:col-span-2">
+        <button
+          className="bg-blue-500 rounded-md text-white font-semibold text-2xl p-3 mt-6"
+        >
+          Complete Your Order
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

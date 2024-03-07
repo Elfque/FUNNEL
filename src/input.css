@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.funnel-2-links {
+  @apply font-semibold text-neutral-900 hover:text-blue-500 cursor-pointer duration-500;
+}
+.funnel-3-links {
+  @apply font-semibold text-white hover:text-blue-500 cursor-pointer duration-500;
+}
+.funnel2-blue-button {
+  @apply bg-blue-500 text-white py-5 px-10 rounded-lg text-2xl font-semibold;
+}
+.funnel3-blue-button {
+  @apply bg-orange-500 text-white py-5 px-10 rounded-lg text-xl font-semibold;
+}
