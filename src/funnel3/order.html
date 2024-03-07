@@ -3,8 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../output.css" />
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      .flex-center {
+        @apply flex items-center justify-center;
+      }
+
+      .funnel-2-links {
+        @apply font-semibold text-neutral-900 hover:text-blue-500 cursor-pointer duration-500;
+      }
+      .funnel-3-links {
+        @apply font-semibold text-white hover:text-blue-500 cursor-pointer duration-500;
+      }
+      .funnel2-blue-button {
+        @apply bg-blue-500 text-white py-5 px-10 rounded-lg text-2xl font-semibold;
+      }
+      .funnel3-blue-button {
+        @apply bg-orange-500 text-white py-5 px-10 rounded-lg text-xl font-semibold;
+      }
+      .edit-input {
+        @apply block w-full rounded-md py-2 px-4 outline-none text-sm bg-white border border-gray-500 mt-4;
+      }
+
+      .menu-md {
+        @apply -right-80;
+      }
+      .menu-md.active {
+        @apply -right-0;
+      }
+
+      .detail {
+        @apply h-0 overflow-hidden;
+      }
+      .detail.active {
+        @apply h-32;
+      }
+
+      .modal {
+        @apply fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 p-10 rounded-lg z-20 w-[90%] max-w-xl;
+      }
+      .form-control {
+        @apply relative flex border border-blue-400 p-2 my-6 rounded-md bg-white;
+      }
+      .form-control input {
+        @apply bg-transparent w-full outline-0;
+      }
+      .form-control.white input {
+        @apply bg-transparent w-full outline-0 border border-neutral-300 rounded-md p-2;
+      }
+      .form-control.white {
+        @apply border-0 w-full outline-0 my-0;
+      }
+      .form-control img {
+        @apply w-4 absolute right-2;
+      }
+      .cancel-icon {
+        @apply absolute top-2 right-2;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              orangee: "#f4741f",
+              gold: "#FFD700",
+            },
+          },
+        },
+      };
+    </script>
   </head>
 
   <body class="overflow-x-hidden">

@@ -36,6 +36,18 @@ const closeModal = () => {
 overlay.addEventListener("click", closeModal);
 closeBtn.addEventListener("click", closeModal);
 
+// OBSERVER
+let options = {
+  root: document.querySelector("#scrollArea"),
+  rootMargin: "0px",
+  threshold: 1.0,
+};
+
+let target = document.querySelector("header");
+observer.observe(target);
+
+let observer = new IntersectionObserver(callback, options);
+
 // const directToPayBtn = document.querySelector(".go-pay");
 
 // directToPayBtn.addEventListener("click", () => {
