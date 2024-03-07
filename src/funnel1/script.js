@@ -1,11 +1,3 @@
-// const menuBtn = document.querySelector(".menu-button");
-// const menuMain = document.querySelector(".menu-md");
-
-// menuBtn.addEventListener("click", () => {
-//   console.log("ksk");
-//   menuMain.classList.toggle("active");
-// });
-
 const tit = document.querySelectorAll(".tit");
 
 tit.forEach((item) => {
@@ -34,11 +26,29 @@ const closeModal = () => {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
 };
-overlay.addEventListener("click", closeModal);
-closeBtn.addEventListener("click", closeModal);
+overlay?.addEventListener("click", closeModal);
+closeBtn?.addEventListener("click", closeModal);
 
-const directToPayBtn = document.querySelector(".go-pay");
+// OBSERVER
+let options = {
+  root: document.querySelector("#scrollArea"),
+  rootMargin: "0px",
+  threshold: 0.9,
+};
 
-// directToPayBtn.addEventListener("click", () => {
-//   window.location.replace("/src/funnel2/order.html");
-// });
+const target = document.querySelector("header");
+const navbar = document.querySelector(".navbar");
+
+const callback = (entries) => {
+  const [entry] = entries;
+
+  if (entry.intersectionRatio < 0.9) {
+    navbar.classList.add("bg-gray-400");
+  } else {
+    navbar.classList.remove("bg-gray-400");
+  }
+  // console.log(entry);
+};
+
+let observer = new IntersectionObserver(callback, options);
+observer.observe(target);

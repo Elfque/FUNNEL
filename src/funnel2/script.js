@@ -42,3 +42,26 @@ const directToPayBtn = document.querySelector(".go-pay");
 directToPayBtn.addEventListener("click", () => {
   window.location.replace("/src/funnel2/order.html");
 });
+
+let options = {
+  root: document.querySelector("#scrollArea"),
+  rootMargin: "0px",
+  threshold: 0.9,
+};
+
+const target = document.querySelector("header");
+const navbar = document.querySelector(".navbar");
+
+const callback = (entries) => {
+  const [entry] = entries;
+
+  if (entry.intersectionRatio < 0.9) {
+    navbar.classList.add("bg-gray-400");
+  } else {
+    navbar.classList.remove("bg-gray-400");
+  }
+  // console.log(entry);
+};
+
+let observer = new IntersectionObserver(callback, options);
+observer.observe(target);

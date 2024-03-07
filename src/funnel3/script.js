@@ -33,23 +33,28 @@ const closeModal = () => {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
 };
-overlay.addEventListener("click", closeModal);
-closeBtn.addEventListener("click", closeModal);
+overlay?.addEventListener("click", closeModal);
+closeBtn?.addEventListener("click", closeModal);
 
-// OBSERVER
 let options = {
   root: document.querySelector("#scrollArea"),
   rootMargin: "0px",
-  threshold: 1.0,
+  threshold: 0.9,
 };
 
-let target = document.querySelector("header");
-observer.observe(target);
+const target = document.querySelector("header");
+const navbar = document.querySelector(".navbar");
+
+const callback = (entries) => {
+  const [entry] = entries;
+
+  if (entry.intersectionRatio < 0.9) {
+    navbar?.classList.add("bg-neutral-800");
+  } else {
+    navbar?.classList.remove("bg-neutral-800");
+  }
+  // console.log(entry);
+};
 
 let observer = new IntersectionObserver(callback, options);
-
-// const directToPayBtn = document.querySelector(".go-pay");
-
-// directToPayBtn.addEventListener("click", () => {
-//   window.location.replace("/src/funnel2/order.html");
-// });
+observer.observe(target);
