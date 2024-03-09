@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      .modal {
+        @apply fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 p-10 rounded-lg z-20 w-[90%] max-w-2xl bg-[#f1efe0];
+      }
+      .form-control {
+        @apply my-2;
+      }
+      .form-control label {
+        @apply font-semibold;
+      }
+      .form-control input {
+        @apply bg-transparent w-full outline-0 bg-white p-2 mt-1 rounded-md;
+      }
+
+      .cancel-icon {
+        @apply absolute top-2 right-2;
+      }
+      .shadowed {
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.197);
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3d6667",
+              blackPrimary: "#2e2e2e",
+              greenPrimary: "#585959",
+              redBtn: "#e74c58",
+            },
+            fontFamily: {
+              merri: ["Merriweather", "serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-merri">
+    <header
+      class="bg-[url(https://cffunnelstemplates.com/demo/spa/assets/img/banner-image-upsell.jpg)] bg-cover h-[80vh] mb-20"
+    >
+      <!-- NAVBAR -->
+      <div class="h-32 md:h-20">
+        <div
+          class="navbar flex items-center justify-between py-4 px-10 w-full top-0 flex-col gap-2 md:flex-row"
+        >
+          <img
+            src="https://cffunnelstemplates.com/demo/spa/assets/logo/logo-dark.svg"
+            alt=""
+            class="w-40"
+          />
+
+          <button
+            class="bg-primary text-white py-4 px-9 font-semibold rounded-full open-btn"
+          >
+            BOOK AN APPOINTMENT
+          </button>
+        </div>
+      </div>
+
+      <div class="text-primary text-center w-5/6 mx-auto mt-20">
+        <div class="text-sxl md:text-6xl mt-6 leading-tight">
+          <span class="text-red-400"> Wait! </span>
+          Here's a special offer to go along with your order!
+        </div>
+        <div class="text-2xl my-4">GET 50% DISCOUNT ON THIS PURCHASE.</div>
+        <div class="text-2xl">
+          Now, before we complete your order, I'd like to make you a
+          <span class="text-red-400"> special one time</span> offer that you
+          will get here.
+        </div>
+      </div>
+    </header>
+
+    <img
+      src="https://cffunnelstemplates.com/demo/spa/assets/img/upsell-img.jpg"
+      alt=""
+      class="w-4/5 max-w-4xl mx-auto mb-10"
+    />
+
+    <div class="text-center mb-12">
+      <div class="text-5xl">What We Offer For Body Wellness</div>
+      <div class="max-w-4xl mx-auto mt-4 font-poppins">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation.
+      </div>
+
+      <div class="mt-10 font-poppins">
+        <div class="flex gap-4 justify-center items-center">
+          <svg
+            width="40px"
+            height="40px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M7 12L9.89075 14.8907V14.8907C9.95114 14.951 10.049 14.9511 10.1094 14.8907V14.8907L17 8"
+                stroke="#323232"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+
+          <div class="text-xl">
+            <span class="font-bold">Aroma Therapy:</span>
+            Nulla feugiat urna nisl, sed porta ligula dictum ege.
+          </div>
+        </div>
+
+        <div class="flex gap-4 justify-center items-center">
+          <svg
+            width="40px"
+            height="40px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M7 12L9.89075 14.8907V14.8907C9.95114 14.951 10.049 14.9511 10.1094 14.8907V14.8907L17 8"
+                stroke="#323232"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+
+          <div class="text-xl">
+            <span class="font-bold">Reflexology Care:</span>
+            Proin varius metus a lorem bibendum facilisis.
+          </div>
+        </div>
+
+        <div class="flex gap-4 justify-center items-center">
+          <svg
+            width="40px"
+            height="40px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M7 12L9.89075 14.8907V14.8907C9.95114 14.951 10.049 14.9511 10.1094 14.8907V14.8907L17 8"
+                stroke="#323232"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+
+          <div class="text-xl">
+            <span class="font-bold">Stone Therapy:</span>
+            Nulla feugiat urna nisl, sed porta ligula dictum ege.
+          </div>
+        </div>
+
+        <div class="flex gap-4 justify-center items-center">
+          <svg
+            width="40px"
+            height="40px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M7 12L9.89075 14.8907V14.8907C9.95114 14.951 10.049 14.9511 10.1094 14.8907V14.8907L17 8"
+                stroke="#323232"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+
+          <div class="text-xl">
+            <span class="font-bold">Massage Care:</span>
+            Sed ultricies vehicula purus, ac dapibus laoreet rhoncus.
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-10">
+        <div class="text-4xl">
+          Regular Price <span class="line-through">$300</span>
+          <span class="text-red-400">50% Off</span>
+        </div>
+        <div class="text-4xl font-semibold mt-2">Offer Price - $150</div>
+
+        <button
+          class="bg-primary text-white py-4 px-9 font-semibold rounded-full font-poppins mt-6"
+        >
+          <a href="./order.html"> YES, I WANT TO UPGRADE MY OFFER </a>
+        </button>
+
+        <div class="text-red-500 underline mt-4">
+          <a href="./downsell.html"
+            >No thanks, I'd rather pay full price later</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONY -->
+    <div class="bg-[#f1efe0] py-10">
+      <img
+        src="https://cffunnelstemplates.com/demo/spa/assets/img/quote.png"
+        alt=""
+        class="mx-auto"
+      />
+
+      <div
+        class="text-centet my-6 max-w-4xl mx-auto text-center font-poppins text-xl"
+      >
+        Donec gravida ultrices vestibulum. Vestibulum ante ipsum primis in
+        faucibus orci luctus et ultrices posuere cubilia curae; Cras at risus
+        tempor ligula tempus convallis Fusce pharetra rutrum tellus eget
+        volutpat. Suspendisse porta odio sem, at molestie turpis sollicitudin
+        et. Nulla facilisi. Quisque vel velit at enim laoreet tempor. Cras
+        dictum ex id dignissim vestibulum. Mauris quis finibus, vulputate tellus
+        vitae, aliquet felis. Nunc iaculis dolor sed facilisis congue.
+      </div>
+
+      <div class="flex justify-center items-center gap-4 font-poppins">
+        <img
+          src="https://cffunnelstemplates.com/demo/spa/assets/img/jane-doe.png"
+          alt=""
+        />
+        <div>
+          <div class="font-semibold">Jane Doe</div>
+          <div class="text-xs">Beauty Expert</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="my-16 px-6">
+      <div class="text-center mb-10">
+        <div class="text-5xl">Frquently Asked Questions</div>
+        <div class="font-poppins max-w-4xl mx-auto">
+          Donec gravida ultrices vestibulum, Ante ipsum primis in faucibus orci
+          luctus et posuere cubilia Cras at risus tempor ligula tempus convallis
+          Fusce pharetra rutrum tellus.
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 font-poppins w-[90%] mx-auto gap-6">
+        <div class="shadowed text-center p-8 rounded-md">
+          <div class="font-bold text-2xl mb-4">
+            Maecenas dapibus nunc sed orci tristique?
+          </div>
+          <div>
+            Donec gravida ultrices vestibulum. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia curae; Cras at
+            risus tempor ligula tempus
+          </div>
+        </div>
+
+        <div class="shadowed text-center p-8 rounded-md">
+          <div class="font-bold text-2xl mb-4">
+            Maecenas dapibus nunc sed orci tristique?
+          </div>
+          <div>
+            Donec gravida ultrices vestibulum. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia curae; Cras at
+            risus tempor ligula tempus
+          </div>
+        </div>
+
+        <div class="shadowed text-center p-8 rounded-md">
+          <div class="font-bold text-2xl mb-4">
+            Maecenas dapibus nunc sed orci tristique?
+          </div>
+          <div>
+            Donec gravida ultrices vestibulum. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia curae; Cras at
+            risus tempor ligula tempus
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div>
+      <div
+        class="bg-[url(https://cffunnelstemplates.com/demo/spa/assets/img/spa-banner3.jpg)] text-white py-10 bg-fixed"
+      >
+        <div class="text-center text-white">
+          <div class="font-poppins text-3xl my-6">
+            What are you holding up for
+          </div>
+          <div class="text-2xl md:text-6xl font-bold">
+            SCHEDULE YOUR APPOINTMENT
+          </div>
+          <div class="max-w-3xl font-poppins mx-auto text-base my-4">
+            Suspendisse potenti. Ut nec metus risus. Suspendisse potenti. Morbi
+            condimentum, neque in sollicitudin feugiat, nunc mauris luctus
+            massa, eget feugiat diam dui in urna.
+          </div>
+
+          <button
+            class="bg-primary text-white py-4 px-9 font-semibold rounded-full my-8 open-btn"
+          >
+            BOOK AN APPOINTMENT
+          </button>
+        </div>
+      </div>
+
+      <footer
+        class="bg-[#102323] text-center text-white py-10 border-t-4 border-blue-600 font-poppins"
+      >
+        <div class="flex justify-center items-center">
+          <img
+            src="https://cffunnelstemplates.com/demo/trip-reservation/assets/img/logo.svg"
+            alt=""
+            class="w-48"
+          />
+        </div>
+
+        <div class="my-6 text-lg w-5/6 mx-auto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+          fringilla consectetur metus at scelerisque. Nam mattis felis quis
+          sollicitudin cursus. Suspendisse potenti. Vestibulum ante ipsum primis
+          in faucibus orci luctus.
+        </div>
+        <div>© Copyright YourBrand.com All rights reserved</div>
+      </footer>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6 cancel-icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18 18 6M6 6l12 12"
+        />
+      </svg>
+
+      <div
+        class="text-xl md:text-4xl text-text-blackPrimary font-bold text-center"
+      >
+        Sign Up To Get The Appointment Right Now!
+      </div>
+      <div class="text-center font-semibold">Complete the form below.</div>
+
+      <form action="" class="grid gap-4 my-6">
+        <div class="form-control white">
+          <label for="name">Name:</label>
+          <input type="text" placeholder="First Name" required />
+          <img src="./img/name.svg" alt="" class="" />
+        </div>
+        <div class="form-control white">
+          <label for="email">Email Address:</label>
+          <input type="email" placeholder="Email Address" required />
+          <img src="./img/mail.svg" alt="" class="" />
+        </div>
+      </form>
+
+      <div class="text-center">
+        <button
+          class="bg-primary text-white py-4 px-9 font-semibold rounded-full font-poppins"
+        >
+          <div class="text-xl">BOOK AN APPOINTMENT</div>
+          <div class="text-xs font-light">
+            Your Information will not be shared
+          </div>
+        </button>
+      </div>
+
+      <div class="font-light text-sm mt-4 text-center font-poppins">
+        Your privacy is important to us and we will not spam you. By signing up
+        you'll also receive access to business tips and exclusive offers. View
+        our Privacy Policy.
+      </div>
+    </div>
+
+    <!-- OVERLAY -->
+    <div
+      class="fixed left-0 top-0 bg-black/30 w-screen h-screen z-10 overlay hidden"
+    ></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
