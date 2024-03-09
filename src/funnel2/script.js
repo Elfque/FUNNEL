@@ -37,11 +37,11 @@ const closeModal = () => {
 overlay.addEventListener("click", closeModal);
 closeBtn.addEventListener("click", closeModal);
 
-const directToPayBtn = document.querySelector(".go-pay");
+// const directToPayBtn = document.querySelector(".go-pay");
 
-directToPayBtn.addEventListener("click", () => {
-  window.location.replace("/src/funnel2/order.html");
-});
+// directToPayBtn.addEventListener("click", () => {
+//   window.location.replace("./order.html");
+// });
 
 let options = {
   root: document.querySelector("#scrollArea"),
