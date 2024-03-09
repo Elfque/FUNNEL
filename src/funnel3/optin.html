@@ -6,6 +6,9 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
+      html {
+        scroll-behavior: smooth;
+      }
       .flex-center {
         @apply flex items-center justify-center;
       }
@@ -89,10 +92,12 @@
           />
 
           <div class="md:flex gap-4 items-center hidden">
-            <div class="funnel-3-links">About</div>
-            <div class="funnel-3-links">Facilities</div>
-            <div class="funnel-3-links">Gallery</div>
-            <div class="funnel-3-links">Testimonials</div>
+            <div class="funnel-3-links"><a href="#about">About</a></div>
+            <div class="funnel-3-links"><a href="#facility">Facilities</a></div>
+            <div class="funnel-3-links"><a href="#gallery">Gallery</a></div>
+            <div class="funnel-3-links">
+              <a href="#testimonial">Testimonials</a>
+            </div>
             <button
               class="p-2 text-sm font-semibold text-white rounded-md bg-orangee open-btn"
             >
@@ -119,10 +124,12 @@
           <div
             class="absolute top-full itemx-center p-6 md:hidden bg-white duration-500 menu-md"
           >
-            <div class="funnel-2-links">About</div>
-            <div class="funnel-2-links">Facilities</div>
-            <div class="funnel-2-links">Gallery</div>
-            <div class="funnel-2-links">Testimonials</div>
+            <div class="funnel-3-links"><a href="#about">About</a></div>
+            <div class="funnel-3-links"><a href="#facility">Facilities</a></div>
+            <div class="funnel-3-links"><a href="#gallery">Gallery</a></div>
+            <div class="funnel-3-links">
+              <a href="#testimonial">Testimonials</a>
+            </div>
             <button
               class="p-2 text-sm font-semibold text-white rounded-md bg-orangee open-btn"
             >
@@ -147,7 +154,7 @@
       </div>
     </header>
 
-    <div class="bg-funnel2Banner py-4">
+    <div class="bg-funnel2Banner py-4" id="about">
       <div class="grid grid-cols-2 gap-6 w-5/6 mx-auto items-center">
         <div class="">
           <img
@@ -190,7 +197,7 @@
     </div>
 
     <!-- FACILITIES -->
-    <div>
+    <div id="facility">
       <div class="text-center mb-8">
         <div class="text-blue-500 mb-2 text-5xl">Facilities</div>
         <div class="text-blue-950">
@@ -297,9 +304,6 @@
 
     <div class="text-center mt-6">
       <button class="funnel3-blue-button mb-2 open-btn">CALL TO ACTION</button>
-      <!-- <div class="flex-center mt-4">
-        <img src="" alt="" class="w-60" />
-      </div> -->
     </div>
 
     <div
@@ -361,7 +365,7 @@
       </div>
     </div>
 
-    <div>
+    <div id="gallery">
       <div class="text-center mb-8">
         <div class="mb-2 text-5xl">Our Gallery</div>
         <div class="text-blue-950">
@@ -404,7 +408,7 @@
       </div>
     </div>
 
-    <div>
+    <div id="testimonial">
       <div class="bg-blue-100 py-10 my-10">
         <div class="text-2xl md:text-6xl text-center mb-6">
           What Our Guests Say
