@@ -18,6 +18,10 @@
       .modal {
         @apply fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 p-10 rounded-lg z-20 w-[90%] max-w-xl bg-white;
       }
+      .image-abs {
+        @apply w-full h-full absolute left-0 top-0 h-full -z-10 object-cover;
+      }
+
       .form-control {
         @apply my-2;
       }
@@ -32,6 +36,7 @@
         @apply absolute top-2 right-2;
       }
     </style>
+
     <script>
       tailwind.config = {
         theme: {
@@ -48,9 +53,13 @@
     </script>
   </head>
   <body class="font-monte">
-    <header
-      class="bg-[url(https://cffunnelstemplates.com/demo/childcare-master/assets/images/main-banner-bg.jpg)] bg-cover h-[80vh]"
-    >
+    <!-- bg-[url(https://cffunnelstemplates.com/demo/childcare-master/assets/images/main-banner-bg.jpg)] bg-cover -->
+    <header class="relative h-[80vh]">
+      <img
+        src="https://cffunnelstemplates.com/demo/childcare-master/assets/images/main-banner-bg.jpg"
+        alt=""
+        class="image-abs"
+      />
       <!-- NAVBAR -->
       <div class="py-4 w-11/12 mx-auto">
         <img

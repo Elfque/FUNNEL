@@ -10,9 +10,14 @@
         @apply flex items-center justify-center;
       }
 
+      .image-abs {
+        @apply w-full h-full absolute left-0 top-0 h-full -z-10 object-cover;
+      }
+
       .funnel-2-links {
         @apply font-semibold text-neutral-900 hover:text-blue-500 cursor-pointer duration-500;
       }
+
       .funnel-3-links {
         @apply font-semibold text-white hover:text-blue-500 cursor-pointer duration-500;
       }
@@ -62,6 +67,7 @@
         @apply absolute top-2 right-2;
       }
     </style>
+
     <script>
       tailwind.config = {
         theme: {
@@ -76,9 +82,13 @@
     </script>
   </head>
   <body>
-    <header
-      class="bg-[url(https://cffunnelstemplates.com/demo/cafe-and-bar/assets/images/cafe-bar-banner.jpg)]"
-    >
+    <!-- bg-[url(https://cffunnelstemplates.com/demo/cafe-and-bar/assets/images/cafe-bar-banner.jpg)] -->
+    <header class="relative">
+      <img
+        src="https://cffunnelstemplates.com/demo/cafe-and-bar/assets/images/cafe-bar-banner.jpg"
+        alt=""
+        class="image-abs"
+      />
       <div class="h-12">
         <div
           class="py-4 px-10 flex justify-center text-white navbar fixed w-full duration-500 top-0"

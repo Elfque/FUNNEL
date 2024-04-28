@@ -10,6 +10,10 @@
         @apply flex items-center justify-center;
       }
 
+      .image-abs {
+        @apply w-full h-full absolute left-0 top-0 h-full -z-10 object-cover;
+      }
+
       .funnel-2-links {
         @apply font-semibold text-neutral-900 hover:text-blue-500 cursor-pointer duration-500;
       }
@@ -62,6 +66,7 @@
         @apply absolute top-2 right-2;
       }
     </style>
+
     <script>
       tailwind.config = {
         theme: {
@@ -76,9 +81,12 @@
     </script>
   </head>
   <body>
-    <header
-      class="bg-[url(https://cffunnelstemplates.com/demo/cafe-and-bar/assets/images/cafe-bar-banner.jpg)]"
-    >
+    <header class="relative">
+      <img
+        src="https://cffunnelstemplates.com/demo/cafe-and-bar/assets/images/cafe-bar-banner.jpg"
+        alt=""
+        class="image-abs"
+      />
       <div class="h-12">
         <div
           class="py-4 px-10 flex justify-center text-white navbar fixed w-full duration-500 top-0"
@@ -299,10 +307,14 @@
     </div>
 
     <!-- FOOTER -->
+    <!-- bg-[url(https://cffunnelstemplates.com/demo/cafe-and-bar/assets/images/cafe-last-banner.jpg)] -->
     <div>
-      <div
-        class="bg-[url(https://cffunnelstemplates.com/demo/cafe-and-bar/assets/images/cafe-last-banner.jpg)] text-white py-10 bg-fixed bg-no-repeat bg-cover"
-      >
+      <div class="relative text-white py-10 bg-fixed bg-no-repeat bg-cover">
+        <img
+          src="https://cffunnelstemplates.com/demo/cafe-and-bar/assets/images/cafe-last-banner.jpg"
+          alt=""
+          class="image-abs"
+        />
         <div class="text-center text-white">
           <img src="./img/instagram.svg" alt="" class="mx-auto w-16 mb-8" />
 
