@@ -18,6 +18,10 @@
       .form-control {
         @apply my-2;
       }
+      .image-abs {
+        @apply w-full h-full absolute left-0 top-0 h-full -z-10 object-cover;
+      }
+
       .form-control label {
         @apply font-semibold;
       }
@@ -55,9 +59,12 @@
     </script>
   </head>
   <body class="font-merri">
-    <header
-      class="bg-[url(https://cffunnelstemplates.com/demo/spa/assets/img/banner-image-upsell.jpg)] bg-cover h-[80vh] mb-20"
-    >
+    <header class="h-[80vh] mb-20">
+      <img
+        src="https://cffunnelstemplates.com/demo/spa/assets/img/banner-image-upsell.jpg"
+        alt=""
+        class="image-abs"
+      />
       <!-- NAVBAR -->
       <div class="h-32 md:h-20">
         <div class="navbar flex justify-center py-4 w-full top-0">
@@ -171,9 +178,12 @@
 
     <!-- FOOTER -->
     <div>
-      <div
-        class="bg-[url(https://cffunnelstemplates.com/demo/spa/assets/img/spa-banner3.jpg)] text-white py-10 bg-fixed"
-      >
+      <div class="text-white py-10 relative">
+        <img
+          src="https://cffunnelstemplates.com/demo/spa/assets/img/spa-banner3.jpg"
+          alt=""
+          class="image-abs"
+        />
         <div class="text-center text-white">
           <div class="font-poppins text-3xl my-6">
             What are you holding up for

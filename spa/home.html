@@ -18,6 +18,11 @@
       .form-control {
         @apply my-2;
       }
+      
+      .image-abs {
+        @apply w-full h-full absolute left-0 top-0 h-full -z-10 object-cover;
+      }x
+
       .form-control label {
         @apply font-semibold;
       }
@@ -32,6 +37,7 @@
         box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.197);
       }
     </style>
+
     <script>
       tailwind.config = {
         theme: {
@@ -52,9 +58,11 @@
     </script>
   </head>
   <body class="font-merri">
+    <!-- bg-[url(https://cffunnelstemplates.com/demo/spa/assets/img/spa-banner.jpg)] bg-cover -->
     <header
-      class="bg-[url(https://cffunnelstemplates.com/demo/spa/assets/img/spa-banner.jpg)] bg-cover h-[120vh]"
+      class="relative h-[120vh]"
     >
+    <img src="https://cffunnelstemplates.com/demo/spa/assets/img/spa-banner.jpg" alt="" class="image-abs">
       <!-- NAVBAR -->
       <div class="h-32 md:h-20">
         <div
@@ -216,9 +224,11 @@
     </div>
 
     <!-- APPOINTMENT -->
+    <!-- bg-[url(https://cffunnelstemplates.com/demo/spa/assets/img/banner-2.jpg)] bg-cover  -->
     <div
-      class="text-center bg-[url(https://cffunnelstemplates.com/demo/spa/assets/img/banner-2.jpg)] bg-cover py-20"
+      class="text-center relative py-20"
     >
+    <img src="https://cffunnelstemplates.com/demo/spa/assets/img/banner-2.jpg" alt="" class="image-abs">
       <div class="text-4xl mb-6">Appointment</div>
       <div class="my-4">Need to Create a Booking or Have a Address?</div>
       <div>
@@ -415,9 +425,12 @@
 
     <!-- FOOTER -->
     <div>
+      <!-- bg-[url(https://cffunnelstemplates.com/demo/spa/assets/img/spa-banner3.jpg)] -->
       <div
-        class="bg-[url(https://cffunnelstemplates.com/demo/spa/assets/img/spa-banner3.jpg)] text-white py-10 bg-fixed"
+        class="relative text-white py-10 bg-fixed"
       >
+      <img src="https://cffunnelstemplates.com/demo/spa/assets/img/spa-banner3.jpg" alt="" class="image-abs">
+      
         <div class="text-center text-white">
           <div class="font-poppins text-3xl my-6">
             What are you holding up for

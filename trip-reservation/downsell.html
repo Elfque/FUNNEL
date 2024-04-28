@@ -12,7 +12,9 @@
       .flex-center {
         @apply flex items-center justify-center;
       }
-
+      .image-abs {
+        @apply w-full h-full absolute left-0 top-0 h-full -z-10 object-cover;
+      }
       .funnel-2-links {
         @apply font-semibold text-neutral-900 hover:text-blue-500 cursor-pointer duration-500;
       }
@@ -65,6 +67,7 @@
         @apply absolute top-2 right-2;
       }
     </style>
+
     <script>
       tailwind.config = {
         theme: {
@@ -79,9 +82,12 @@
     </script>
   </head>
   <body>
-    <header
-      class="bg-[url(https://cffunnelstemplates.com/demo/trip-reservation/assets/img/trip-res-banner.jpg)] h-[60vh]"
-    >
+    <header class="relative h-[60vh]">
+      <img
+        src="https://cffunnelstemplates.com/demo/trip-reservation/assets/img/trip-res-banner.jpg"
+        alt=""
+        class="image-abs"
+      />
       <div class="fixed duration-300 top-0 w-screen navbar">
         <div class="flex justify-between items-center py-4 w-4/5 mx-auto">
           <img
