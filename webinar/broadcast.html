@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style type="text/tailwindcss">
+      .flex-center {
+        @apply flex items-center justify-center;
+      }
+      .image-abs {
+        @apply w-full h-full absolute left-0 top-0 h-full -z-10 object-cover;
+      }
+      .learn span {
+        @apply font-semibold;
+      }
+      .learn > div {
+        display: grid;
+        grid-template-columns: 2rem 1fr;
+      }
+      .download-btn {
+        @apply bg-[#0088ea] py-2 px-6 rounded-md text-sm font-semibold text-white flex items-center w-full justify-center gap-2 max-w-40 mx-auto;
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              myYellow: "#ffe501",
+              yellowBorder: "#c9b424",
+              buttonText: "#0f0400",
+              navBg: "#eef1f9",
+              lightBlue: "#00cfdf",
+              darkBlue: "#252e49",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="flex p-4 justify-between items-center bg-navBg">
+      <div class="font-semibold text-3xl">LOGO</div>
+
+      <div class="flex gap-2 items-center">
+        <svg
+          width="24px"
+          height="24px"
+          viewBox="-3.68 0 58.71 58.71"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#000000"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              id="television_tv"
+              data-name="television tv"
+              d="M620.423,361.846H603.407l17.25-17.252a1.271,1.271,0,1,0-1.8-1.8l-19.046,19.049h-2.036l-9.671-9.673a1.281,1.281,0,0,0-1.8,0h0a1.273,1.273,0,0,0,0,1.8l7.872,7.874h-17.66a3.719,3.719,0,0,0-3.715,3.719v25.687a3.72,3.72,0,0,0,3.715,3.718h43.9a3.729,3.729,0,0,0,3.72-3.718V365.565A3.728,3.728,0,0,0,620.423,361.846Zm1.172,29.406a1.19,1.19,0,0,1-1.172,1.174h-43.9a1.187,1.187,0,0,1-1.172-1.174V365.565a1.191,1.191,0,0,1,1.172-1.178h43.9a1.194,1.194,0,0,1,1.172,1.178Zm-33.93,9.885h22.562v-2.543H587.665Z"
+              transform="translate(-572.803 -342.427)"
+              fill="#00d9ff"
+            ></path>
+          </g>
+        </svg>
+        <div>WE ARE LIVE WITH <span class="text-lightBlue">JANE DOE</span></div>
+      </div>
+    </nav>
+
+    <header
+      class="grid grid-cols-10 w-10/12 mx-auto mt-10 items-center gap-4 mb-10"
+    >
+      <div class="col-span-8 text-center">
+        <div class="bg-lightBlue text-white py-1 text-center text-xs">
+          WEBINAR IN PROGRESS
+        </div>
+        <div
+          class="bg-darkBlue text-white py-2 text-center p-1 flex items-center justify-center gap-2 font-semibold"
+        >
+          <img src="./img/television.svg" alt="" /> My Secret Selling System for
+          Closing 10 Clients Per Day
+        </div>
+
+        <!-- VIDEO -->
+        <div class="flex-center">
+          <iframe
+            width="100%"
+            height="400"
+            src="https://www.youtube.com/embed/v=wbnCvzsM_lQ"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="font-bold text-2xl my-2">
+          Click the button below now to claim your spot:
+        </div>
+
+        <button
+          class="bg-myYellow py-4 px-6 rounded-md text-2xl font-semibold text-buttonText flex items-center w-full justify-center gap-2 w-full mx-auto border border-yellowBorder"
+        >
+          YES, I WANT THIS INSANE DEAL! &gt;&gt;
+        </button>
+      </div>
+
+      <div class="col-span-2 bg-navBg">
+        <div class="p-2 text-center font-semibold">
+          Please download your webinar hand-outs:
+        </div>
+        <button class="download-btn mb-2">
+          <img src="./img/download-white.svg" alt="" class="w-6" /> Download
+        </button>
+
+        <div class="flex-center">
+          <img
+            src="https://img.freepik.com/free-photo/positive-guy-with-african-hairstyle-dark-skin-wearing-elegant-white-shirt_273609-14032.jpg?t=st=1714546959~exp=1714550559~hmac=6151bb80e25cc0d666393672b91b4f0e4555264071de0be10b8fb327b44d10e0&w=740"
+            alt=""
+            class="w-28 h-28 rounded-full object-cover"
+          />
+        </div>
+        <div class="p-2 text-center font-semibold">Presented by Jane Doe</div>
+        <div class="p-2 text-center font-semibold">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          nam deserunt saepe voluptate
+        </div>
+
+        <div class="">
+          <div class="text-center text-sm italic">Estimated finish time</div>
+
+          <div
+            class="countdown flex text-2xl font-semibold gap-2 items-start justify-center"
+          >
+            <div class="text-center">
+              <div>00</div>
+              <div class="text-[8px] -mt-2 font-light">HOURS</div>
+            </div>
+            <div>:</div>
+            <div class="text-center">
+              <div>00</div>
+              <div class="text-[8px] -mt-2 font-light">MINUTES</div>
+            </div>
+            <div>:</div>
+            <div class="text-center">
+              <div>00</div>
+              <div class="text-[8px] -mt-2 font-light">SECONDS</div>
+            </div>
+          </div>
+
+          <div class="bg-lightBlue text-white py-1 text-center text-xs">
+            WEBINAR IS AT MAX CAPACITY
+          </div>
+          <div class="bg-darkBlue text-white text-sm text-center p-1">
+            IMPORTANT: DO NOT close this page until the webinar has ended or you
+            may not be able to re-enter the room
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- FOOTER -->
+    <div
+      class="text-white flex justify-between bg-darkBlue items-center p-4 flex-col md:flex-row gap-4"
+    >
+      <div class="text-3xl">LOGO</div>
+
+      <div>
+        <div
+          class="flex gap-4 text-sm font-semibold justify-center md:justify-end"
+        >
+          <div>Testimonials</div>
+          <div>Pricing</div>
+          <div>Support</div>
+          <div>Affiliates</div>
+          <div>Login</div>
+        </div>
+
+        <div class="text-xs text-center md:text-end font-light">
+          Copyright &copy; 2024 YourName.com | All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
