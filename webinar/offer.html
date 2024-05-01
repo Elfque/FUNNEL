@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+
+    <style type="text/tailwindcss">
+      .flex-center {
+        @apply flex items-center justify-center;
+      }
+      .image-abs {
+        @apply w-full h-full absolute left-0 top-0 h-full -z-10 object-cover;
+      }
+      .learn span {
+        @apply font-semibold;
+      }
+      .learn > div {
+        display: grid;
+        grid-template-columns: 2rem 1fr;
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              myYellow: "#ffe501",
+              yellowBorder: "#c9b424",
+              buttonText: "#0f0400",
+              navBg: "#eef1f9",
+              lightBlue: "#00cfdf",
+              darkBlue: "#252e49",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="flex p-4 justify-center items-center bg-navBg">
+      <div class="font-semibold text-3xl">LOGO</div>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="mt-10">
+      <div class="text-center font-bold text-2xl mb-2">
+        Here is the INSANE deal I promised
+      </div>
+
+      <div class="text-4xl font-bold text-center max-w-3xl mx-auto">
+        Join my Inner Circle Program Now and I'll Personally Build and Setup
+        Your Sales System For <span class="underline">80% OFF</span> My Regular
+        Fee
+      </div>
+    </div>
+
+    <div class="text-center font-bold text-4xl max-w-2xl mx-auto mt-10">
+      To Recap. Here's Everything You Get When You Join TODAY:
+    </div>
+
+    <div class="max-w-2xl mx-auto mt-10 grid grid-cols-10 gap-6">
+      <div class="col-span-2">
+        <img
+          src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?t=st=1714591436~exp=1714595036~hmac=4a4fed388917d5a3439c66a565f0c20564f387cdac020ca3fbe707920d657dcc&w=740"
+          alt=""
+          class="w-full h-40 object-cover"
+        />
+      </div>
+
+      <div class="col-span-6">
+        <div class="font-bold text-2xl">Lorem ipsum dolor sit.</div>
+        <div>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+          accusamus praesentium pariatur quo quasi totam fugiat, quas eligendi?
+          Ipsum commodi suscipit distinctio! Sapiente aspernatur maiores
+          incidunt corporis, dolorum, nihil error laudantium veritatis
+          doloremque iste nostrum nulla. Quas voluptas libero nemo.
+        </div>
+      </div>
+
+      <div class="text-center col-span-2 font-semibold">
+        <div class="text-xl">$90</div>
+        <div class="text-xs">VALUE</div>
+      </div>
+    </div>
+
+    <div class="bg-navBg py-10">
+      <div class="text-center font-bold text-4xl max-w-2xl mx-auto mt-10">
+        6 REASONS WHY YOU DON'T WANT TO MISS THIS OFFER
+      </div>
+      <div class="grid gap-4 max-w-xl mx-auto mt-6 learn">
+        <div>
+          <div class="flex justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#00cfdf"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 6 6 9-13.5"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <span>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+            </span>
+            deleniti odio quos reprehenderit saepe sit culpa. Ab quod natus
+            earum odit error quisquam laboriosam, dicta vitae saepe impedit
+            repudiandae doloribus numquam aut voluptatem sed voluptates et
+            architecto. Libero, voluptatem ut!
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#00cfdf"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 6 6 9-13.5"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <span>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+            </span>
+            deleniti odio quos reprehenderit saepe sit culpa. Ab quod natus
+            earum odit error quisquam laboriosam, dicta vitae saepe impedit
+            repudiandae doloribus numquam aut voluptatem sed voluptates et
+            architecto. Libero, voluptatem ut!
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#00cfdf"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 6 6 9-13.5"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <span>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+            </span>
+            deleniti odio quos reprehenderit saepe sit culpa. Ab quod natus
+            earum odit error quisquam laboriosam, dicta vitae saepe impedit
+            repudiandae doloribus numquam aut voluptatem sed voluptates et
+            architecto. Libero, voluptatem ut!
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#00cfdf"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 6 6 9-13.5"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <span>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+            </span>
+            deleniti odio quos reprehenderit saepe sit culpa. Ab quod natus
+            earum odit error quisquam laboriosam, dicta vitae saepe impedit
+            repudiandae doloribus numquam aut voluptatem sed voluptates et
+            architecto. Libero, voluptatem ut!
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#00cfdf"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 6 6 9-13.5"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <span>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+            </span>
+            deleniti odio quos reprehenderit saepe sit culpa. Ab quod natus
+            earum odit error quisquam laboriosam, dicta vitae saepe impedit
+            repudiandae doloribus numquam aut voluptatem sed voluptates et
+            architecto. Libero, voluptatem ut!
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#00cfdf"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 6 6 9-13.5"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <span>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+            </span>
+            deleniti odio quos reprehenderit saepe sit culpa. Ab quod natus
+            earum odit error quisquam laboriosam, dicta vitae saepe impedit
+            repudiandae doloribus numquam aut voluptatem sed voluptates et
+            architecto. Libero, voluptatem ut!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div
+      class="text-white flex justify-between bg-darkBlue items-center p-4 flex-col md:flex-row gap-4"
+    >
+      <div class="text-3xl">LOGO</div>
+
+      <div>
+        <div
+          class="flex gap-4 text-sm font-semibold justify-center md:justify-end"
+        >
+          <div>Testimonials</div>
+          <div>Pricing</div>
+          <div>Support</div>
+          <div>Affiliates</div>
+          <div>Login</div>
+        </div>
+
+        <div class="text-xs text-center md:text-end font-light">
+          Copyright &copy; 2024 YourName.com | All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
