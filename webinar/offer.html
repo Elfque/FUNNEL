@@ -20,6 +20,15 @@
         display: grid;
         grid-template-columns: 2rem 1fr;
       }
+      .form-input {
+        @apply block w-full border border-gray-300 p-2 bg-gray-100;
+      }
+      .form-select {
+        @apply block w-full border border-gray-300 p-2 bg-gray-100;
+      }
+      .form-label {
+        @apply font-semibold mb-1;
+      }
     </style>
 
     <script>
@@ -57,34 +66,241 @@
       </div>
     </div>
 
-    <div class="text-center font-bold text-4xl max-w-2xl mx-auto mt-10">
-      To Recap. Here's Everything You Get When You Join TODAY:
-    </div>
-
-    <div class="max-w-2xl mx-auto mt-10 grid grid-cols-10 gap-6">
-      <div class="col-span-2">
-        <img
-          src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?t=st=1714591436~exp=1714595036~hmac=4a4fed388917d5a3439c66a565f0c20564f387cdac020ca3fbe707920d657dcc&w=740"
-          alt=""
-          class="w-full h-40 object-cover"
-        />
+    <div class="mb-10">
+      <div class="text-center font-bold text-4xl max-w-2xl mx-auto mt-10">
+        To Recap. Here's Everything You Get When You Join TODAY:
       </div>
 
-      <div class="col-span-6">
-        <div class="font-bold text-2xl">Lorem ipsum dolor sit.</div>
-        <div>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
-          accusamus praesentium pariatur quo quasi totam fugiat, quas eligendi?
-          Ipsum commodi suscipit distinctio! Sapiente aspernatur maiores
-          incidunt corporis, dolorum, nihil error laudantium veritatis
-          doloremque iste nostrum nulla. Quas voluptas libero nemo.
+      <div class="max-w-2xl mx-auto mt-10 grid grid-cols-10 gap-6">
+        <div class="col-span-2">
+          <img
+            src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?t=st=1714591436~exp=1714595036~hmac=4a4fed388917d5a3439c66a565f0c20564f387cdac020ca3fbe707920d657dcc&w=740"
+            alt=""
+            class="w-full h-40 object-cover"
+          />
+        </div>
+
+        <div class="col-span-6">
+          <div class="font-bold text-2xl">Lorem ipsum dolor sit.</div>
+          <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            accusamus praesentium pariatur quo quasi totam fugiat, quas
+            eligendi? Ipsum commodi suscipit distinctio! Sapiente aspernatur
+            maiores incidunt corporis, dolorum, nihil error laudantium veritatis
+            doloremque iste nostrum nulla. Quas voluptas libero nemo.
+          </div>
+        </div>
+
+        <div class="text-center col-span-2 font-semibold">
+          <div class="text-xl">$90</div>
+          <div class="text-xs">VALUE</div>
         </div>
       </div>
 
-      <div class="text-center col-span-2 font-semibold">
-        <div class="text-xl">$90</div>
-        <div class="text-xs">VALUE</div>
+      <div class="max-w-2xl mx-auto mt-10 grid grid-cols-10 gap-6">
+        <div class="col-span-2">
+          <img
+            src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?t=st=1714591436~exp=1714595036~hmac=4a4fed388917d5a3439c66a565f0c20564f387cdac020ca3fbe707920d657dcc&w=740"
+            alt=""
+            class="w-full h-40 object-cover"
+          />
+        </div>
+
+        <div class="col-span-6">
+          <div class="font-bold text-2xl">Lorem ipsum dolor sit.</div>
+          <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            accusamus praesentium pariatur quo quasi totam fugiat, quas
+            eligendi? Ipsum commodi suscipit distinctio! Sapiente aspernatur
+            maiores incidunt corporis, dolorum, nihil error laudantium veritatis
+            doloremque iste nostrum nulla. Quas voluptas libero nemo.
+          </div>
+        </div>
+
+        <div class="text-center col-span-2 font-semibold">
+          <div class="text-xl">$90</div>
+          <div class="text-xs">VALUE</div>
+        </div>
       </div>
+
+      <div class="max-w-2xl mx-auto mt-10 grid grid-cols-10 gap-6">
+        <div class="col-span-2">
+          <img
+            src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?t=st=1714591436~exp=1714595036~hmac=4a4fed388917d5a3439c66a565f0c20564f387cdac020ca3fbe707920d657dcc&w=740"
+            alt=""
+            class="w-full h-40 object-cover"
+          />
+        </div>
+
+        <div class="col-span-6">
+          <div class="font-bold text-2xl">Lorem ipsum dolor sit.</div>
+          <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            accusamus praesentium pariatur quo quasi totam fugiat, quas
+            eligendi? Ipsum commodi suscipit distinctio! Sapiente aspernatur
+            maiores incidunt corporis, dolorum, nihil error laudantium veritatis
+            doloremque iste nostrum nulla. Quas voluptas libero nemo.
+          </div>
+        </div>
+
+        <div class="text-center col-span-2 font-semibold">
+          <div class="text-xl">$90</div>
+          <div class="text-xs">VALUE</div>
+        </div>
+      </div>
+
+      <div class="max-w-2xl mx-auto mt-10 grid grid-cols-10 gap-6">
+        <div class="col-span-2">
+          <img
+            src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?t=st=1714591436~exp=1714595036~hmac=4a4fed388917d5a3439c66a565f0c20564f387cdac020ca3fbe707920d657dcc&w=740"
+            alt=""
+            class="w-full h-40 object-cover"
+          />
+        </div>
+
+        <div class="col-span-6">
+          <div class="font-bold text-2xl">Lorem ipsum dolor sit.</div>
+          <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            accusamus praesentium pariatur quo quasi totam fugiat, quas
+            eligendi? Ipsum commodi suscipit distinctio! Sapiente aspernatur
+            maiores incidunt corporis, dolorum, nihil error laudantium veritatis
+            doloremque iste nostrum nulla. Quas voluptas libero nemo.
+          </div>
+        </div>
+
+        <div class="text-center col-span-2 font-semibold">
+          <div class="text-xl">$90</div>
+          <div class="text-xs">VALUE</div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <div class="text-gray-500 font-semibold text-lg">
+          TOTAL VALUE : $1,283.00
+        </div>
+        <div class="font-bold text-4xl">Today's Price: $197</div>
+      </div>
+    </div>
+
+    <!-- PAYMENT -->
+    <div class="bg-[#f0f4f9] max-w-3xl mx-auto mb-10">
+      <div
+        class="bg-lightBlue text-white text-3xl py-3 text-center font-semibold"
+      >
+        Lock-in Your Spot Now!
+      </div>
+      <div class="text-center text-3xl w-4/5 mx-auto font-semibold py-3">
+        GET ALL THIS AND MORE WHEN YOU TAKE ADVANTAGE OF THIS INSANE OFFER TODAY
+      </div>
+      <div
+        class="countdown flex text-2xl font-semibold gap-2 items-start justify-center"
+      >
+        <div class="text-center">
+          <div class="bg-neutral-800 text-white p-3 text-sm rounded-md">00</div>
+          <div class="text-[8px] mt-1">HOURS</div>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-neutral-800 text-white p-3 text-sm rounded-md">00</div>
+          <div class="text-[8px] mt-1">MINUTES</div>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-neutral-800 text-white p-3 text-sm rounded-md">00</div>
+          <div class="text-[8px] mt-1">SECONDS</div>
+        </div>
+      </div>
+
+      <div class="p-4">
+        <div class="bg-white flex justify-between text-sm p-2 rounded-md">
+          <div class="flex items-center gap-2">
+            <input type="radio" />
+            <div>
+              <div>Dynamically Updated</div>
+              <div>(200 of 210 Sold)</div>
+            </div>
+          </div>
+          <div>$0.00</div>
+        </div>
+      </div>
+
+      <form action="" class="text-sm p-4">
+        <div class="control">
+          <label for="email" class="form-label">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            class="form-input"
+            placeholder="Enter Your email here"
+          />
+        </div>
+
+        <div class="grid grid-cols-5 mt-4 gap-4">
+          <div class="control col-span-3">
+            <label for="card-number" class="form-label">Card Number:</label>
+            <input
+              type="number"
+              id="card-number"
+              class="form-input"
+              placeholder="Card Number"
+            />
+          </div>
+          <div class="control col-span-2">
+            <label for="cvc" class="form-label">CVC Code:</label>
+            <input
+              type="number"
+              id="cvc"
+              class="form-input"
+              placeholder="CVC"
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 mt-4 gap-4">
+          <div class="control">
+            <label for="exp-month" class="form-label">Expiry Month</label>
+            <select name="" id="exp-month" class="form-select">
+              <option value="1">01</option>
+              <option value="2">02</option>
+              <option value="3">03</option>
+              <option value="4">04</option>
+              <option value="5">05</option>
+              <option value="6">06</option>
+              <option value="7">07</option>
+              <option value="8">08</option>
+              <option value="9">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+
+          <div class="control">
+            <label for="exp-year" class="form-label">Expiry Year</label>
+            <select name="" id="exp-year" class="form-select">
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
+              <option value="2031">2031</option>
+              <option value="2032">2032</option>
+              <option value="2033">2033</option>
+              <option value="2034">2034</option>
+            </select>
+          </div>
+        </div>
+
+        <div
+          class="bg-myYellow py-2 px-6 rounded-2 uppercase font-semibold border border-yellowBorder text-buttonText w-full mt-2 text-center rounded-md mt-4"
+        >
+          <div class="text-2xl font-semibold">Compete Order!</div>
+          <div class="text-xs">Get Instant access</div>
+        </div>
+      </form>
     </div>
 
     <div class="bg-navBg py-10">
