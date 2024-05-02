@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+
+    <style type="text/tailwindcss">
+      .flex-center {
+        @apply flex items-center justify-center;
+      }
+      .image-abs {
+        @apply w-full h-full absolute left-0 top-0 h-full -z-10 object-cover;
+      }
+      header {
+        background: radial-gradient(circle, #747474, #474747);
+        @apply h-[100vh] text-center;
+      }
+      .top-border {
+        border-radius: 50% 50% 0% 0% / 35% 35% 25% 25%;
+      }
+      .learn span {
+        @apply font-semibold;
+      }
+      .learn > div {
+        display: grid;
+        grid-template-columns: 2rem 1fr;
+      }
+      .form-input {
+        @apply block w-full border border-gray-300 p-2 bg-gray-100;
+      }
+      .form-select {
+        @apply block w-full border border-gray-300 p-2 bg-gray-100;
+      }
+      .form-label {
+        @apply font-semibold mb-1;
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navBg: "#3d3d3d",
+              myYellow: "#d4c83c",
+              ash: "#efefef ",
+              lightBlue: "#00cfdf",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="bg-navBg flex justify-center py-4">
+      <div class="text-2xl text-white">LOGO</div>
+    </nav>
+
+    <header>
+      <div class="text-myYellow font-semibold text-2xl">
+        TIME IS RUNNING OUT TO GET THE OFFER OF THE YEAR!
+      </div>
+      <div class="font-bold text-5xl text-white w-5/6 mx-auto max-w-4xl">
+        QUICK! YOUR $1,000 DISCOUNT IS ENDING IN 48 HOURS...
+      </div>
+
+      <div class="flex-center mt-5">
+        <!-- width="100%"
+          height="315" -->
+        <iframe
+          src="https://www.youtube.com/embed/V1f8MOQiHRw"
+          frameborder="0"
+          allowfullscreen
+          class="w-4/5 h-[30rem] max-w-3xl"
+        ></iframe>
+      </div>
+    </header>
+
+    <div class="bg-white -mt-56 top-border pt-56">
+      <div class="max-w-2xl w-4/5 mx-auto">
+        <button
+          class="bg-myYellow py-4 px-6 rounded-md text-2xl font-semibold text-buttonText flex items-center w-full justify-center gap-2 w-full mx-auto border border-yellowBorder"
+        >
+          YES, I WANT THIS INSANE DEAL! &gt;&gt;
+        </button>
+      </div>
+
+      <div class="w-4/6 mx-auto grid grid-cols-10 gap-4 my-16 items-center">
+        <div class="col-span-6">
+          <div class="font-bold text-center text-4xl">
+            I'M JOEY BLOGS AND I'VE GENERATED MILLIONS IN SALES
+          </div>
+
+          <div class="my-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            molestias delectus, nisi tenetur libero quos quae. Distinctio, sed
+            provident! Dignissimos aspernatur harum est numquam quas ab
+            temporibus aliquid earum error.
+          </div>
+        </div>
+        <div class="col-span-4 flex-center">
+          <img
+            src="https://img.freepik.com/free-photo/positive-guy-with-african-hairstyle-dark-skin-wearing-elegant-white-shirt_273609-14032.jpg?t=st=1714546959~exp=1714550559~hmac=6151bb80e25cc0d666393672b91b4f0e4555264071de0be10b8fb327b44d10e0&w=740"
+            alt=""
+            class="w-[20rem] h-[20rem] rounded-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-ash py-10 mt-40">
+      <div class="text-4xl text-center max-w-4xl mx-auto font-semibold">
+        HERE'S JUST SOME OF WHAT YOU'LL LEARN INSIDE MY NEW TRAINING COURSE
+      </div>
+
+      <div class="grid gap-4 w-10/12 max-w-2xl mx-auto mt-6 learn">
+        <div>
+          <div class="flex justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#00cfdf"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 6 6 9-13.5"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <span>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+            </span>
+            deleniti odio quos reprehenderit saepe sit culpa. Ab quod natus
+            earum odit error quisquam laboriosam, dicta vitae saepe impedit
+            repudiandae doloribus numquam aut voluptatem sed voluptates et
+            architecto. Libero, voluptatem ut!
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#00cfdf"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 6 6 9-13.5"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <span>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+            </span>
+            deleniti odio quos reprehenderit saepe sit culpa. Ab quod natus
+            earum odit error quisquam laboriosam, dicta vitae saepe impedit
+            repudiandae doloribus numquam aut voluptatem sed voluptates et
+            architecto. Libero, voluptatem ut!
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#00cfdf"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 6 6 9-13.5"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <span>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+            </span>
+            deleniti odio quos reprehenderit saepe sit culpa. Ab quod natus
+            earum odit error quisquam laboriosam, dicta vitae saepe impedit
+            repudiandae doloribus numquam aut voluptatem sed voluptates et
+            architecto. Libero, voluptatem ut!
+          </div>
+        </div>
+      </div>
+
+      <div class="w-10/12 max-w-2xl mx-auto mt-6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+        adipisci similique voluptate dolore corporis ducimus nisi hic molestiae
+        iusto animi eligendi et aut impedit sequi alias error, architecto maxime
+        numquam minus commodi fugit! Illum odit sit officia blanditiis
+        veritatis! Modi totam blanditiis accusamus officiis? Recusandae ipsam
+        excepturi minima quidem quo.
+      </div>
+    </div>
+
+    <div
+      class="grid grid-cols-2 w-10/12 max-w-4xl mx-auto my-16 items-center gap-6"
+    >
+      <div>
+        <img
+          src="https://img.freepik.com/free-photo/strategy-vision-planning-process-tactic-concept_53876-120126.jpg?t=st=1714642803~exp=1714646403~hmac=9d7a87dfd28e7ab5c595db9cea68d53b6adf5f491a49fd4e1a321f6a398ed13a&w=740"
+          alt=""
+          class="w-full h-80 object-cover"
+        />
+      </div>
+
+      <div>
+        <div class="text-4xl text-center">
+          THESE SAME STRATEGIES PULL IN RESULT FAST
+        </div>
+        <div class="my-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          impedit quis maxime ab, aut inventore dolorum temporibus reiciendis
+          quasi incidunt animi provident, nihil nostrum repellendus ea sunt
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
+          enim impedit quasi corporis veniam quibusdam quia? Animi nisi nihil
+          cumque distinctio exercitationem perspiciatis repellat provident
+          nostrum quam accusamus suscipit dignissimos molestias fuga laborum
+          enim culpa nulla soluta perferendis, ex debitis laudantium. Iste,
+        </div>
+      </div>
+    </div>
+
+    <div class="w-10/12 max-w-4xl mx-auto my-16">
+      <div class="text-center text-4xl font-bold">
+        THESE STRATEGIES AND TACTICS ARE SO HOT RIGHT NOW
+      </div>
+
+      <div class="flex-center">
+        <img src="./img/imm.png" alt="" class="w-4/5" />
+      </div>
+      <div class="w-10/12 max-w-2xl mx-auto mt-6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+        adipisci similique voluptate dolore corporis ducimus nisi hic molestiae
+        iusto animi eligendi et aut impedit sequi alias error, architecto maxime
+        numquam minus commodi fugit! Illum odit sit officia blanditiis
+        veritatis! Modi totam blanditiis accusamus officiis? Recusandae ipsam
+        excepturi minima quidem quo.
+      </div>
+
+      <div class="grid gap-4 w-10/12 max-w-2xl mx-auto mt-6 learn">
+        <div>
+          <div class="flex justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#00cfdf"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 6 6 9-13.5"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <span>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+            </span>
+            deleniti odio quos reprehenderit saepe sit culpa. Ab quod natus
+            earum odit error quisquam laboriosam, dicta vitae saepe impedit
+            repudiandae doloribus numquam aut voluptatem sed voluptates et
+            architecto. Libero, voluptatem ut!
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#00cfdf"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 6 6 9-13.5"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <span>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+            </span>
+            deleniti odio quos reprehenderit saepe sit culpa. Ab quod natus
+            earum odit error quisquam laboriosam, dicta vitae saepe impedit
+            repudiandae doloribus numquam aut voluptatem sed voluptates et
+            architecto. Libero, voluptatem ut!
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#00cfdf"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 6 6 9-13.5"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <span>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+            </span>
+            deleniti odio quos reprehenderit saepe sit culpa. Ab quod natus
+            earum odit error quisquam laboriosam, dicta vitae saepe impedit
+            repudiandae doloribus numquam aut voluptatem sed voluptates et
+            architecto. Libero, voluptatem ut!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-ash py-10">
+      <div class="w-5/6 mx-auto">
+        <div class="text-center text-4xl font-bold">
+          CHECKOUT WHAT LAST YEAR'S STUDENTS HAD TO SAY ABOUT THIS TRAINING
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-4 w-4/5 mx-auto mt-6">
+          <div class="bg-white text-center p-8">
+            <div class="flex-center">
+              <img
+                src="https://img.freepik.com/free-photo/close-up-studio-shot-beautiful-young-mixed-race-woman-model-with-curly-dark-hair_273609-13870.jpg?t=st=1714548641~exp=1714552241~hmac=08b516826b85af6d92990167dfd7cc371763d14d60281ccab378f90ae24f5327&w=740"
+                alt=""
+                class="rounded-full w-20 h-20 object-cover"
+              />
+            </div>
+
+            <div class="text-sm font-semibold my-4 text-start">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              praesentium perferendis labore, omnis rerum totam sit
+            </div>
+
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+              blanditiis earum iure illo? Obcaecati modi et odio ducimus. Vero,
+              quisquam?
+            </div>
+
+            <div class="text-center mt-8">
+              <div class="font-semibold">CUSTOMER NAME</div>
+              <div class="italic text-gray-500">LOCATION</div>
+            </div>
+          </div>
+
+          <div class="bg-white text-center p-8">
+            <div class="flex-center">
+              <img
+                src="https://img.freepik.com/free-photo/close-up-studio-shot-beautiful-young-mixed-race-woman-model-with-curly-dark-hair_273609-13870.jpg?t=st=1714548641~exp=1714552241~hmac=08b516826b85af6d92990167dfd7cc371763d14d60281ccab378f90ae24f5327&w=740"
+                alt=""
+                class="rounded-full w-20 h-20 object-cover"
+              />
+            </div>
+
+            <div class="text-sm font-semibold my-4 text-start">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              praesentium perferendis labore, omnis rerum totam sit
+            </div>
+
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+              blanditiis earum iure illo? Obcaecati modi et odio ducimus. Vero,
+              quisquam?
+            </div>
+
+            <div class="text-center mt-8">
+              <div class="font-semibold">CUSTOMER NAME</div>
+              <div class="italic text-gray-500">LOCATION</div>
+            </div>
+          </div>
+
+          <div class="bg-white text-center p-8">
+            <div class="flex-center">
+              <img
+                src="https://img.freepik.com/free-photo/close-up-studio-shot-beautiful-young-mixed-race-woman-model-with-curly-dark-hair_273609-13870.jpg?t=st=1714548641~exp=1714552241~hmac=08b516826b85af6d92990167dfd7cc371763d14d60281ccab378f90ae24f5327&w=740"
+                alt=""
+                class="rounded-full w-20 h-20 object-cover"
+              />
+            </div>
+
+            <div class="text-sm font-semibold my-4 text-start">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              praesentium perferendis labore, omnis rerum totam sit
+            </div>
+
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+              blanditiis earum iure illo? Obcaecati modi et odio ducimus. Vero,
+              quisquam?
+            </div>
+
+            <div class="text-center mt-8">
+              <div class="font-semibold">CUSTOMER NAME</div>
+              <div class="italic text-gray-500">LOCATION</div>
+            </div>
+          </div>
+
+          <div class="bg-white text-center p-8">
+            <div class="flex-center">
+              <img
+                src="https://img.freepik.com/free-photo/close-up-studio-shot-beautiful-young-mixed-race-woman-model-with-curly-dark-hair_273609-13870.jpg?t=st=1714548641~exp=1714552241~hmac=08b516826b85af6d92990167dfd7cc371763d14d60281ccab378f90ae24f5327&w=740"
+                alt=""
+                class="rounded-full w-20 h-20 object-cover"
+              />
+            </div>
+
+            <div class="text-sm font-semibold my-4 text-start">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              praesentium perferendis labore, omnis rerum totam sit
+            </div>
+
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+              blanditiis earum iure illo? Obcaecati modi et odio ducimus. Vero,
+              quisquam?
+            </div>
+
+            <div class="text-center mt-8">
+              <div class="font-semibold">CUSTOMER NAME</div>
+              <div class="italic text-gray-500">LOCATION</div>
+            </div>
+          </div>
+
+          <div class="bg-white text-center p-8">
+            <div class="flex-center">
+              <img
+                src="https://img.freepik.com/free-photo/close-up-studio-shot-beautiful-young-mixed-race-woman-model-with-curly-dark-hair_273609-13870.jpg?t=st=1714548641~exp=1714552241~hmac=08b516826b85af6d92990167dfd7cc371763d14d60281ccab378f90ae24f5327&w=740"
+                alt=""
+                class="rounded-full w-20 h-20 object-cover"
+              />
+            </div>
+
+            <div class="text-sm font-semibold my-4 text-start">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              praesentium perferendis labore, omnis rerum totam sit
+            </div>
+
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+              blanditiis earum iure illo? Obcaecati modi et odio ducimus. Vero,
+              quisquam?
+            </div>
+
+            <div class="text-center mt-8">
+              <div class="font-semibold">CUSTOMER NAME</div>
+              <div class="italic text-gray-500">LOCATION</div>
+            </div>
+          </div>
+
+          <div class="bg-white text-center p-8">
+            <div class="flex-center">
+              <img
+                src="https://img.freepik.com/free-photo/close-up-studio-shot-beautiful-young-mixed-race-woman-model-with-curly-dark-hair_273609-13870.jpg?t=st=1714548641~exp=1714552241~hmac=08b516826b85af6d92990167dfd7cc371763d14d60281ccab378f90ae24f5327&w=740"
+                alt=""
+                class="rounded-full w-20 h-20 object-cover"
+              />
+            </div>
+
+            <div class="text-sm font-semibold my-4 text-start">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              praesentium perferendis labore, omnis rerum totam sit
+            </div>
+
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+              blanditiis earum iure illo? Obcaecati modi et odio ducimus. Vero,
+              quisquam?
+            </div>
+
+            <div class="text-center mt-8">
+              <div class="font-semibold">CUSTOMER NAME</div>
+              <div class="italic text-gray-500">LOCATION</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="text-center font-bold text-3xl max-w-lg mx-auto mt-10">
+        REGISTER NOW AND YOU'LL GET THESE AWESOME HAND-OUTS...
+      </div>
+
+      <div
+        class="grid md:grid-cols-3 gap-8 text-center w-5/6 max-w-4xl mx-auto mt-6"
+      >
+        <div>
+          <img
+            src="https://img.freepik.com/free-psd/marketing-business-print-template_23-2148990530.jpg?t=st=1714547324~exp=1714550924~hmac=57bb57e7ac470cb87ec1286464a300e00592a79567f2bd6b2548cec66ab029e8&w=740"
+            alt=""
+            class="w-56 h-80 object-cover mx-auto"
+          />
+
+          <div class="font-semibold text-lg my-2">Lorem, ipsum.</div>
+          <div class="text-lightBlue text-xs font-semibold">VALUE: $97</div>
+          <div class="font-semibold mt-2 text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+            voluptatem, iste reiciendis est ipsa praesentium id, ducimus
+            veritatis aliquam repellendus illo asperiores magnam non laboriosam
+            consequatur.
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="https://img.freepik.com/free-psd/marketing-business-print-template_23-2148990530.jpg?t=st=1714547324~exp=1714550924~hmac=57bb57e7ac470cb87ec1286464a300e00592a79567f2bd6b2548cec66ab029e8&w=740"
+            alt=""
+            class="w-56 h-80 object-cover mx-auto"
+          />
+
+          <div class="font-semibold text-lg my-2">Lorem, ipsum.</div>
+          <div class="text-lightBlue text-xs font-semibold">VALUE: $97</div>
+          <div class="font-semibold mt-2 text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+            voluptatem, iste reiciendis est ipsa praesentium id, ducimus
+            veritatis aliquam repellendus illo asperiores magnam non laboriosam
+            consequatur.
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="https://img.freepik.com/free-psd/marketing-business-print-template_23-2148990530.jpg?t=st=1714547324~exp=1714550924~hmac=57bb57e7ac470cb87ec1286464a300e00592a79567f2bd6b2548cec66ab029e8&w=740"
+            alt=""
+            class="w-56 h-80 object-cover mx-auto"
+          />
+
+          <div class="font-semibold text-lg my-2">Lorem, ipsum.</div>
+          <div class="text-lightBlue text-xs font-semibold">VALUE: $97</div>
+          <div class="font-semibold mt-2 text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+            voluptatem, iste reiciendis est ipsa praesentium id, ducimus
+            veritatis aliquam repellendus illo asperiores magnam non laboriosam
+            consequatur.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-ash text-center mt-10">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center font-bold text-3xl">
+          STILL NOT CONVINCED? HERE'S EVEN MORE PROOF THIS WORKS
+        </div>
+
+        <div class="text-gray-500 text=lg italic">
+          Checkout our graphs for the last 12 months
+        </div>
+
+        <div class="flex-center">
+          <img
+            src="./img/_32854964-2802-41F9-B2AE-C2810E6B36E2_.png-removebg-preview.png"
+            alt=""
+            class="w-4/5"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto my-20">
+      <div class="text-center font-bold text-3xl">
+        DON'T WAIT ANY LONGER, GET YOUR COPY NOW BEFORE TE TIMER STRIKES ZERO
+      </div>
+
+      <div class="text-gray-500 text=lg italic text-center">
+        Checkout our graphs for the last 12 months
+      </div>
+
+      <div class="flex-center">
+        <img
+          src="./img/_B352DED8-A272-442C-9AA2-EF6B6EECDA5D_.png-removebg-preview.png"
+          alt=""
+          class="w-4/5"
+        />
+      </div>
+
+      <div>
+        <div class="max-w-3xl mx-auto mt-10 grid grid-cols-10 gap-6">
+          <div class="col-span-2">
+            <img
+              src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?t=st=1714591436~exp=1714595036~hmac=4a4fed388917d5a3439c66a565f0c20564f387cdac020ca3fbe707920d657dcc&w=740"
+              alt=""
+              class="w-full h-40 object-cover"
+            />
+          </div>
+
+          <div class="col-span-6">
+            <div class="font-bold text-2xl">Lorem ipsum dolor sit.</div>
+            <div>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              accusamus praesentium pariatur quo quasi totam fugiat, quas
+              eligendi? Ipsum commodi suscipit distinctio! Sapiente aspernatur
+            </div>
+          </div>
+
+          <div class="text-center col-span-2 font-semibold">
+            <div class="text-xl">$90</div>
+            <div class="text-xs">VALUE</div>
+          </div>
+        </div>
+        <div class="max-w-3xl mx-auto mt-10 grid grid-cols-10 gap-6">
+          <div class="col-span-2">
+            <img
+              src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?t=st=1714591436~exp=1714595036~hmac=4a4fed388917d5a3439c66a565f0c20564f387cdac020ca3fbe707920d657dcc&w=740"
+              alt=""
+              class="w-full h-40 object-cover"
+            />
+          </div>
+
+          <div class="col-span-6">
+            <div class="font-bold text-2xl">Lorem ipsum dolor sit.</div>
+            <div>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              accusamus praesentium pariatur quo quasi totam fugiat, quas
+              eligendi? Ipsum commodi suscipit distinctio! Sapiente aspernatur
+            </div>
+          </div>
+
+          <div class="text-center col-span-2 font-semibold">
+            <div class="text-xl">$90</div>
+            <div class="text-xs">VALUE</div>
+          </div>
+        </div>
+        <div class="max-w-3xl mx-auto mt-10 grid grid-cols-10 gap-6">
+          <div class="col-span-2">
+            <img
+              src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?t=st=1714591436~exp=1714595036~hmac=4a4fed388917d5a3439c66a565f0c20564f387cdac020ca3fbe707920d657dcc&w=740"
+              alt=""
+              class="w-full h-40 object-cover"
+            />
+          </div>
+
+          <div class="col-span-6">
+            <div class="font-bold text-2xl">Lorem ipsum dolor sit.</div>
+            <div>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              accusamus praesentium pariatur quo quasi totam fugiat, quas
+              eligendi? Ipsum commodi suscipit distinctio! Sapiente aspernatur
+            </div>
+          </div>
+
+          <div class="text-center col-span-2 font-semibold">
+            <div class="text-xl">$90</div>
+            <div class="text-xs">VALUE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAYMENT -->
+    <div class="bg-[#f0f4f9] max-w-3xl mx-auto mb-10 p-4 rounded-3xl">
+      <div class="text-center text-3xl w-4/5 mx-auto font-semibold py-3">
+        GET ALL THIS AND MORE WHEN YOU TAKE ADVANTAGE OF THIS INSANE OFFER TODAY
+      </div>
+      <div
+        class="countdown flex text-2xl font-semibold gap-2 items-start justify-center"
+      >
+        <div class="text-center">
+          <div class="bg-neutral-800 text-white p-3 text-sm rounded-md">00</div>
+          <div class="text-[8px] mt-1">HOURS</div>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-neutral-800 text-white p-3 text-sm rounded-md">00</div>
+          <div class="text-[8px] mt-1">MINUTES</div>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-neutral-800 text-white p-3 text-sm rounded-md">00</div>
+          <div class="text-[8px] mt-1">SECONDS</div>
+        </div>
+      </div>
+
+      <div class="p-4">
+        <div class="bg-white flex justify-between text-sm p-2 rounded-md">
+          <div class="flex items-center gap-2">
+            <input type="radio" />
+            <div>
+              <div>Dynamically Updated</div>
+              <div>(200 of 210 Sold)</div>
+            </div>
+          </div>
+          <div>$0.00</div>
+        </div>
+      </div>
+
+      <form action="" class="text-sm p-4">
+        <div class="control">
+          <label for="email" class="form-label">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            class="form-input"
+            placeholder="Enter Your email here"
+          />
+        </div>
+
+        <div class="grid grid-cols-5 mt-4 gap-4">
+          <div class="control col-span-3">
+            <label for="card-number" class="form-label">Card Number:</label>
+            <input
+              type="number"
+              id="card-number"
+              class="form-input"
+              placeholder="Card Number"
+            />
+          </div>
+          <div class="control col-span-2">
+            <label for="cvc" class="form-label">CVC Code:</label>
+            <input
+              type="number"
+              id="cvc"
+              class="form-input"
+              placeholder="CVC"
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 mt-4 gap-4">
+          <div class="control">
+            <label for="exp-month" class="form-label">Expiry Month</label>
+            <select name="" id="exp-month" class="form-select">
+              <option value="1">01</option>
+              <option value="2">02</option>
+              <option value="3">03</option>
+              <option value="4">04</option>
+              <option value="5">05</option>
+              <option value="6">06</option>
+              <option value="7">07</option>
+              <option value="8">08</option>
+              <option value="9">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+
+          <div class="control">
+            <label for="exp-year" class="form-label">Expiry Year</label>
+            <select name="" id="exp-year" class="form-select">
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
+              <option value="2031">2031</option>
+              <option value="2032">2032</option>
+              <option value="2033">2033</option>
+              <option value="2034">2034</option>
+            </select>
+          </div>
+        </div>
+
+        <button
+          class="bg-red-600 py-4 text-2xl italic px-6 rounded-2 uppercase font-semibold border border-yellowBorder text-white w-full mt-2 text-center rounded-md mt-4"
+        >
+          YES! I WANT THIS OFFER NOW! &gt;&gt;
+        </button>
+      </form>
+    </div>
+
+    <!-- FOOTER -->
+    <div
+      class="text-white flex justify-between bg-black items-center p-4 flex-col md:flex-row gap-4"
+    >
+      <div class="text-3xl">LOGO</div>
+
+      <div>
+        <div
+          class="flex gap-4 text-sm font-semibold justify-center md:justify-end"
+        >
+          <div>Priacy</div>
+          <div>Terms</div>
+          <div>Support</div>
+          <div>Affiliates</div>
+        </div>
+
+        <div class="text-xs text-center md:text-end font-light">
+          Copyright &copy; 2024 YourName.com | All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
