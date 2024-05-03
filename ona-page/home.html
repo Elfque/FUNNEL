@@ -15,7 +15,7 @@
       }
       header {
         background: radial-gradient(circle, #747474, #474747);
-        @apply h-[100vh] text-center;
+        @apply h-fit text-center;
       }
       .top-border {
         border-radius: 50% 50% 0% 0% / 35% 35% 25% 25%;
@@ -58,38 +58,38 @@
       <div class="text-2xl text-white">LOGO</div>
     </nav>
 
-    <header>
-      <div class="text-myYellow font-semibold text-2xl">
+    <header class="p-4">
+      <div class="text-myYellow font-semibold text-lg md:text-2xl">
         TIME IS RUNNING OUT TO GET THE OFFER OF THE YEAR!
       </div>
-      <div class="font-bold text-5xl text-white w-5/6 mx-auto max-w-4xl">
+      <div
+        class="font-bold text-3xl md:text-5xl text-white w-5/6 mx-auto max-w-4xl"
+      >
         QUICK! YOUR $1,000 DISCOUNT IS ENDING IN 48 HOURS...
       </div>
 
       <div class="flex-center mt-5">
-        <!-- width="100%"
-          height="315" -->
         <iframe
           src="https://www.youtube.com/embed/V1f8MOQiHRw"
           frameborder="0"
           allowfullscreen
-          class="w-4/5 h-[30rem] max-w-3xl"
+          class="w-4/5 h-60 md:h-[30rem] max-w-3xl"
         ></iframe>
       </div>
     </header>
 
-    <div class="bg-white -mt-56 top-border pt-56">
+    <div class="bg-white md:-mt-56 top-border md:pt-56 mt-4 md:mt-0">
       <div class="max-w-2xl w-4/5 mx-auto">
         <button
-          class="bg-myYellow py-4 px-6 rounded-md text-2xl font-semibold text-buttonText flex items-center w-full justify-center gap-2 w-full mx-auto border border-yellowBorder"
+          class="bg-myYellow py-4 px-6 rounded-md text-base md:text-2xl font-semibold text-buttonText w-full gap-2 w-full mx-auto border border-yellowBorder"
         >
           YES, I WANT THIS INSANE DEAL! &gt;&gt;
         </button>
       </div>
 
-      <div class="w-4/6 mx-auto grid grid-cols-10 gap-4 my-16 items-center">
-        <div class="col-span-6">
-          <div class="font-bold text-center text-4xl">
+      <div class="w-5/6 mx-auto grid md:grid-cols-10 gap-4 my-16 items-center">
+        <div class="md:col-span-6">
+          <div class="font-bold text-center text-2xl md:text-4xl">
             I'M JOEY BLOGS AND I'VE GENERATED MILLIONS IN SALES
           </div>
 
@@ -100,7 +100,8 @@
             temporibus aliquid earum error.
           </div>
         </div>
-        <div class="col-span-4 flex-center">
+
+        <div class="md:col-span-4 flex-center">
           <img
             src="https://img.freepik.com/free-photo/positive-guy-with-african-hairstyle-dark-skin-wearing-elegant-white-shirt_273609-14032.jpg?t=st=1714546959~exp=1714550559~hmac=6151bb80e25cc0d666393672b91b4f0e4555264071de0be10b8fb327b44d10e0&w=740"
             alt=""
@@ -110,12 +111,14 @@
       </div>
     </div>
 
-    <div class="bg-ash py-10 mt-40">
-      <div class="text-4xl text-center max-w-4xl mx-auto font-semibold">
+    <div class="bg-ash md:py-10 p-4">
+      <div
+        class="text-2xl md:text-4xl text-center max-w-4xl mx-auto font-semibold"
+      >
         HERE'S JUST SOME OF WHAT YOU'LL LEARN INSIDE MY NEW TRAINING COURSE
       </div>
 
-      <div class="grid gap-4 w-10/12 max-w-2xl mx-auto mt-6 learn">
+      <div class="grid gap-4 max-w-2xl mx-auto mt-6 learn">
         <div>
           <div class="flex justify-center">
             <svg
@@ -215,18 +218,18 @@
     </div>
 
     <div
-      class="grid grid-cols-2 w-10/12 max-w-4xl mx-auto my-16 items-center gap-6"
+      class="grid md:grid-cols-2 w-10/12 max-w-4xl mx-auto my-16 items-center gap-6"
     >
       <div>
         <img
           src="https://img.freepik.com/free-photo/strategy-vision-planning-process-tactic-concept_53876-120126.jpg?t=st=1714642803~exp=1714646403~hmac=9d7a87dfd28e7ab5c595db9cea68d53b6adf5f491a49fd4e1a321f6a398ed13a&w=740"
           alt=""
-          class="w-full h-80 object-cover"
+          class="w-full h-80 object-cover rounded-md"
         />
       </div>
 
       <div>
-        <div class="text-4xl text-center">
+        <div class="text-2xl md:text-4xl text-center">
           THESE SAME STRATEGIES PULL IN RESULT FAST
         </div>
         <div class="my-4">
@@ -245,14 +248,14 @@
     </div>
 
     <div class="w-10/12 max-w-4xl mx-auto my-16">
-      <div class="text-center text-4xl font-bold">
+      <div class="text-center text-2xl md:text-4xl font-bold">
         THESE STRATEGIES AND TACTICS ARE SO HOT RIGHT NOW
       </div>
 
       <div class="flex-center">
         <img src="./img/imm.png" alt="" class="w-4/5" />
       </div>
-      <div class="w-10/12 max-w-2xl mx-auto mt-6">
+      <div class="max-w-2xl mx-auto mt-6">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
         adipisci similique voluptate dolore corporis ducimus nisi hic molestiae
         iusto animi eligendi et aut impedit sequi alias error, architecto maxime
@@ -261,7 +264,7 @@
         excepturi minima quidem quo.
       </div>
 
-      <div class="grid gap-4 w-10/12 max-w-2xl mx-auto mt-6 learn">
+      <div class="grid gap-4 max-w-2xl mx-auto mt-6 learn">
         <div>
           <div class="flex justify-center">
             <svg
@@ -353,11 +356,13 @@
 
     <div class="bg-ash py-10">
       <div class="w-5/6 mx-auto">
-        <div class="text-center text-4xl font-bold">
+        <div class="text-center text-2xl md:text-4xl font-bold">
           CHECKOUT WHAT LAST YEAR'S STUDENTS HAD TO SAY ABOUT THIS TRAINING
         </div>
 
-        <div class="grid md:grid-cols-3 gap-4 w-4/5 mx-auto mt-6">
+        <div
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 w-4/5 mx-auto mt-6"
+        >
           <div class="bg-white text-center p-8">
             <div class="flex-center">
               <img
@@ -518,7 +523,9 @@
     </div>
 
     <div>
-      <div class="text-center font-bold text-3xl max-w-lg mx-auto mt-10">
+      <div
+        class="text-center font-bold text-xl md:text-3xl max-w-lg mx-auto mt-10"
+      >
         REGISTER NOW AND YOU'LL GET THESE AWESOME HAND-OUTS...
       </div>
 
@@ -580,7 +587,7 @@
 
     <div class="bg-ash text-center mt-10">
       <div class="max-w-3xl mx-auto">
-        <div class="text-center font-bold text-3xl">
+        <div class="text-center font-bold text-xl md:text-3xl">
           STILL NOT CONVINCED? HERE'S EVEN MORE PROOF THIS WORKS
         </div>
 
@@ -599,7 +606,7 @@
     </div>
 
     <div class="max-w-4xl mx-auto my-20">
-      <div class="text-center font-bold text-3xl">
+      <div class="text-center font-bold text-xl md:text-3xl">
         DON'T WAIT ANY LONGER, GET YOUR COPY NOW BEFORE TE TIMER STRIKES ZERO
       </div>
 
@@ -616,73 +623,79 @@
       </div>
 
       <div>
-        <div class="max-w-3xl mx-auto mt-10 grid grid-cols-10 gap-6">
-          <div class="col-span-2">
-            <img
-              src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?t=st=1714591436~exp=1714595036~hmac=4a4fed388917d5a3439c66a565f0c20564f387cdac020ca3fbe707920d657dcc&w=740"
-              alt=""
-              class="w-full h-40 object-cover"
-            />
-          </div>
-
-          <div class="col-span-6">
-            <div class="font-bold text-2xl">Lorem ipsum dolor sit.</div>
-            <div>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              accusamus praesentium pariatur quo quasi totam fugiat, quas
-              eligendi? Ipsum commodi suscipit distinctio! Sapiente aspernatur
+        <div>
+          <div
+            class="w-4/5 max-w-2xl mx-auto mt-10 grid md:grid-cols-10 md:gap-6 gap-2"
+          >
+            <div class="md:col-span-2 flex-center">
+              <img
+                src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?t=st=1714591436~exp=1714595036~hmac=4a4fed388917d5a3439c66a565f0c20564f387cdac020ca3fbe707920d657dcc&w=740"
+                alt=""
+                class="w-40 md:w-full h-40 object-cover"
+              />
             </div>
-          </div>
 
-          <div class="text-center col-span-2 font-semibold">
-            <div class="text-xl">$90</div>
-            <div class="text-xs">VALUE</div>
+            <div
+              class="text-center col-span-2 font-semibold flex gap-2 md:hidden justify-center"
+            >
+              <div class="">VALUE:</div>
+              <div class="">$90</div>
+            </div>
+
+            <div class="md:col-span-6 text-center md:text-start">
+              <div class="font-bold text-2xl">Lorem ipsum dolor sit.</div>
+              <div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                accusamus praesentium pariatur quo quasi totam fugiat, quas
+                eligendi? Ipsum commodi suscipit distinctio! Sapiente aspernatur
+                maiores incidunt corporis, dolorum, nihil error laudantium
+                veritatis doloremque iste nostrum nulla. Quas voluptas libero
+                nemo.
+              </div>
+            </div>
+
+            <div class="text-center col-span-2 font-semibold hidden md:block">
+              <div class="text-xl">$90</div>
+              <div class="text-xs">VALUE</div>
+            </div>
           </div>
         </div>
-        <div class="max-w-3xl mx-auto mt-10 grid grid-cols-10 gap-6">
-          <div class="col-span-2">
-            <img
-              src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?t=st=1714591436~exp=1714595036~hmac=4a4fed388917d5a3439c66a565f0c20564f387cdac020ca3fbe707920d657dcc&w=740"
-              alt=""
-              class="w-full h-40 object-cover"
-            />
-          </div>
 
-          <div class="col-span-6">
-            <div class="font-bold text-2xl">Lorem ipsum dolor sit.</div>
-            <div>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              accusamus praesentium pariatur quo quasi totam fugiat, quas
-              eligendi? Ipsum commodi suscipit distinctio! Sapiente aspernatur
+        <div>
+          <div
+            class="w-4/5 max-w-2xl mx-auto mt-10 grid md:grid-cols-10 md:gap-6 gap-2"
+          >
+            <div class="md:col-span-2 flex-center">
+              <img
+                src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?t=st=1714591436~exp=1714595036~hmac=4a4fed388917d5a3439c66a565f0c20564f387cdac020ca3fbe707920d657dcc&w=740"
+                alt=""
+                class="w-40 md:w-full h-40 object-cover"
+              />
             </div>
-          </div>
 
-          <div class="text-center col-span-2 font-semibold">
-            <div class="text-xl">$90</div>
-            <div class="text-xs">VALUE</div>
-          </div>
-        </div>
-        <div class="max-w-3xl mx-auto mt-10 grid grid-cols-10 gap-6">
-          <div class="col-span-2">
-            <img
-              src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?t=st=1714591436~exp=1714595036~hmac=4a4fed388917d5a3439c66a565f0c20564f387cdac020ca3fbe707920d657dcc&w=740"
-              alt=""
-              class="w-full h-40 object-cover"
-            />
-          </div>
-
-          <div class="col-span-6">
-            <div class="font-bold text-2xl">Lorem ipsum dolor sit.</div>
-            <div>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              accusamus praesentium pariatur quo quasi totam fugiat, quas
-              eligendi? Ipsum commodi suscipit distinctio! Sapiente aspernatur
+            <div
+              class="text-center col-span-2 font-semibold flex gap-2 md:hidden justify-center"
+            >
+              <div class="">VALUE:</div>
+              <div class="">$90</div>
             </div>
-          </div>
 
-          <div class="text-center col-span-2 font-semibold">
-            <div class="text-xl">$90</div>
-            <div class="text-xs">VALUE</div>
+            <div class="md:col-span-6 text-center md:text-start">
+              <div class="font-bold text-2xl">Lorem ipsum dolor sit.</div>
+              <div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                accusamus praesentium pariatur quo quasi totam fugiat, quas
+                eligendi? Ipsum commodi suscipit distinctio! Sapiente aspernatur
+                maiores incidunt corporis, dolorum, nihil error laudantium
+                veritatis doloremque iste nostrum nulla. Quas voluptas libero
+                nemo.
+              </div>
+            </div>
+
+            <div class="text-center col-span-2 font-semibold hidden md:block">
+              <div class="text-xl">$90</div>
+              <div class="text-xs">VALUE</div>
+            </div>
           </div>
         </div>
       </div>
@@ -690,7 +703,7 @@
 
     <!-- PAYMENT -->
     <div class="bg-[#f0f4f9] max-w-3xl mx-auto mb-10 p-4 rounded-3xl">
-      <div class="text-center text-3xl w-4/5 mx-auto font-semibold py-3">
+      <div class="text-center text-xl md:text-3xl mx-auto font-semibold py-3">
         GET ALL THIS AND MORE WHEN YOU TAKE ADVANTAGE OF THIS INSANE OFFER TODAY
       </div>
       <div
@@ -736,8 +749,8 @@
           />
         </div>
 
-        <div class="grid grid-cols-5 mt-4 gap-4">
-          <div class="control col-span-3">
+        <div class="grid md:grid-cols-5 mt-4 gap-4">
+          <div class="control md:col-span-3">
             <label for="card-number" class="form-label">Card Number:</label>
             <input
               type="number"
@@ -746,7 +759,7 @@
               placeholder="Card Number"
             />
           </div>
-          <div class="control col-span-2">
+          <div class="control md:col-span-2">
             <label for="cvc" class="form-label">CVC Code:</label>
             <input
               type="number"
@@ -757,7 +770,7 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-2 mt-4 gap-4">
+        <div class="grid md:grid-cols-2 mt-4 gap-4">
           <div class="control">
             <label for="exp-month" class="form-label">Expiry Month</label>
             <select name="" id="exp-month" class="form-select">

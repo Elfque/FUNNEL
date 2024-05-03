@@ -15,7 +15,7 @@
       }
       header {
         background: radial-gradient(circle, #747474, #474747);
-        @apply h-[100vh] text-center;
+        @apply text-center p-4;
       }
       .top-border {
         border-radius: 50% 50% 0% 0% / 35% 35% 25% 25%;
@@ -56,19 +56,21 @@
   </head>
   <body>
     <nav class="bg-red-600 flex justify-center py-4">
-      <div class="text-2xl text-white">
+      <div class="text-base md:text-2xl text-white">
         ⚠⚠ This is a ONE TIME OFFER, You will
         <span class="underline">never</span> see this page again ⚠⚠
       </div>
     </nav>
 
     <header class="pt-4">
-      <div class="text-textYellow font-semibold text-4xl mb-4">
+      <div class="text-textYellow font-semibold text-2xl md:text-4xl mb-4">
         🖐 <span class="underline"> WAIT! </span> YOUR ORDER IS
         <span class="underline">NOT</span> READY YET
       </div>
 
-      <div class="font-bold text-6xl text-white w-5/6 mx-auto max-w-4xl">
+      <div
+        class="font-bold text-3xl md:text-6xl text-white w-5/6 mx-auto max-w-4xl"
+      >
         <span class="underline">UPGRADE NOW</span> AND GET
         <span class="italic">$21,820.00</span> IN VALUE
       </div>
@@ -78,12 +80,12 @@
           src="https://www.youtube.com/embed/V1f8MOQiHRw"
           frameborder="0"
           allowfullscreen
-          class="w-4/5 h-[30rem] max-w-3xl"
+          class="w-4/5 h-80 md:h-[30rem] max-w-3xl"
         ></iframe>
       </div>
     </header>
 
-    <div class="bg-white -mt-56 top-border pt-40">
+    <div class="bg-white md:-mt-56 top-border md:pt-40 p-4">
       <div class="max-w-2xl w-4/5 mx-auto">
         <button
           class="bg-myYellow py-4 px-6 rounded-md text-2xl font-bold items-center w-full w-full mx-auto border"
@@ -93,83 +95,121 @@
       </div>
 
       <div class="max-w-4xl mx-auto my-20">
-        <div class="text-center font-bold text-3xl">
+        <div class="text-center font-bold text-xl md:text-3xl">
           HERE'S EVERYTHING YOU ARE GETTING WHEN YOU UPGRADE YOUE OFFER
         </div>
 
         <div>
-          <div class="max-w-3xl mx-auto mt-10 grid grid-cols-10 gap-6">
-            <div class="col-span-2">
+          <div
+            class="w-4/5 max-w-2xl mx-auto mt-10 grid md:grid-cols-10 md:gap-6 gap-2"
+          >
+            <div class="md:col-span-2 flex-center">
               <img
                 src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?t=st=1714591436~exp=1714595036~hmac=4a4fed388917d5a3439c66a565f0c20564f387cdac020ca3fbe707920d657dcc&w=740"
                 alt=""
-                class="w-full h-40 object-cover"
+                class="w-40 md:w-full h-40 object-cover"
               />
             </div>
 
-            <div class="col-span-6">
+            <div
+              class="text-center col-span-2 font-semibold flex gap-2 md:hidden justify-center"
+            >
+              <div class="">VALUE:</div>
+              <div class="">$90</div>
+            </div>
+
+            <div class="md:col-span-6 text-center md:text-start">
               <div class="font-bold text-2xl">Lorem ipsum dolor sit.</div>
               <div>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
                 accusamus praesentium pariatur quo quasi totam fugiat, quas
                 eligendi? Ipsum commodi suscipit distinctio! Sapiente aspernatur
+                maiores incidunt corporis, dolorum, nihil error laudantium
+                veritatis doloremque iste nostrum nulla. Quas voluptas libero
+                nemo.
               </div>
             </div>
 
-            <div class="text-center col-span-2 font-semibold">
+            <div class="text-center col-span-2 font-semibold hidden md:block">
               <div class="text-xl">$90</div>
               <div class="text-xs">VALUE</div>
             </div>
           </div>
-          <div class="max-w-3xl mx-auto mt-10 grid grid-cols-10 gap-6">
-            <div class="col-span-2">
+
+          <div
+            class="w-4/5 max-w-2xl mx-auto mt-10 grid md:grid-cols-10 md:gap-6 gap-2"
+          >
+            <div class="md:col-span-2 flex-center">
               <img
                 src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?t=st=1714591436~exp=1714595036~hmac=4a4fed388917d5a3439c66a565f0c20564f387cdac020ca3fbe707920d657dcc&w=740"
                 alt=""
-                class="w-full h-40 object-cover"
+                class="w-40 md:w-full h-40 object-cover"
               />
             </div>
 
-            <div class="col-span-6">
+            <div
+              class="text-center col-span-2 font-semibold flex gap-2 md:hidden justify-center"
+            >
+              <div class="">VALUE:</div>
+              <div class="">$90</div>
+            </div>
+
+            <div class="md:col-span-6 text-center md:text-start">
               <div class="font-bold text-2xl">Lorem ipsum dolor sit.</div>
               <div>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
                 accusamus praesentium pariatur quo quasi totam fugiat, quas
                 eligendi? Ipsum commodi suscipit distinctio! Sapiente aspernatur
+                maiores incidunt corporis, dolorum, nihil error laudantium
+                veritatis doloremque iste nostrum nulla. Quas voluptas libero
+                nemo.
               </div>
             </div>
 
-            <div class="text-center col-span-2 font-semibold">
+            <div class="text-center col-span-2 font-semibold hidden md:block">
               <div class="text-xl">$90</div>
               <div class="text-xs">VALUE</div>
             </div>
           </div>
-          <div class="max-w-3xl mx-auto mt-10 grid grid-cols-10 gap-6">
-            <div class="col-span-2">
+
+          <div
+            class="w-4/5 max-w-2xl mx-auto mt-10 grid md:grid-cols-10 md:gap-6 gap-2"
+          >
+            <div class="md:col-span-2 flex-center">
               <img
                 src="https://img.freepik.com/free-vector/professional-business-book-cover_23-2149490317.jpg?t=st=1714591436~exp=1714595036~hmac=4a4fed388917d5a3439c66a565f0c20564f387cdac020ca3fbe707920d657dcc&w=740"
                 alt=""
-                class="w-full h-40 object-cover"
+                class="w-40 md:w-full h-40 object-cover"
               />
             </div>
 
-            <div class="col-span-6">
+            <div
+              class="text-center col-span-2 font-semibold flex gap-2 md:hidden justify-center"
+            >
+              <div class="">VALUE:</div>
+              <div class="">$90</div>
+            </div>
+
+            <div class="md:col-span-6 text-center md:text-start">
               <div class="font-bold text-2xl">Lorem ipsum dolor sit.</div>
               <div>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
                 accusamus praesentium pariatur quo quasi totam fugiat, quas
                 eligendi? Ipsum commodi suscipit distinctio! Sapiente aspernatur
+                maiores incidunt corporis, dolorum, nihil error laudantium
+                veritatis doloremque iste nostrum nulla. Quas voluptas libero
+                nemo.
               </div>
             </div>
 
-            <div class="text-center col-span-2 font-semibold">
+            <div class="text-center col-span-2 font-semibold hidden md:block">
               <div class="text-xl">$90</div>
               <div class="text-xs">VALUE</div>
             </div>
           </div>
         </div>
 
-        <div class="text-center">
+        <div class="text-center mt-6">
           <div class="text-gray-500 font-semibold text-lg">
             TOTAL VALUE : $1,283.00
           </div>
@@ -178,8 +218,8 @@
       </div>
     </div>
 
-    <div class="bg-ash py-10 mt-40">
-      <div class="text-4xl text-center max-w-4xl mx-auto font-bold">
+    <div class="bg-ash py-10">
+      <div class="text-2xl md:text-4xl text-center max-w-4xl mx-auto font-bold">
         HERE ARE <span class="underline italic">6 REASONS</span> WHY YOU SHOULD
         UPGRADE YOUR OFFER NOW
       </div>
@@ -284,7 +324,7 @@
 
       <div class="flex-center mt-5">
         <button
-          class="bg-myYellow py-4 px-6 rounded-md text-2xl font-bold items-center w-full w-full mx-auto border w-10/12 max-w-2xl italic"
+          class="bg-myYellow py-4 px-6 rounded-md text-base md:text-2xl font-bold items-center mx-auto border w-10/12 max-w-2xl italic"
         >
           YES, UPGRADE MY ORDER &gt;&gt;
         </button>
