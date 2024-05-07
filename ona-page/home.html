@@ -36,6 +36,27 @@
       .form-label {
         @apply font-semibold mb-1;
       }
+      .modal {
+        @apply fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 p-10 rounded-lg z-20 w-[90%] max-w-xl;
+      }
+      .form-control {
+        @apply relative flex border border-blue-400 p-2 my-6 rounded-md bg-white;
+      }
+      .form-control input {
+        @apply bg-transparent w-full outline-0;
+      }
+      .form-control.white input {
+        @apply bg-transparent w-full outline-0 border border-neutral-300 rounded-md p-2;
+      }
+      .form-control.white {
+        @apply border-0 w-full outline-0 my-0;
+      }
+      .form-control img {
+        @apply w-4 absolute right-2;
+      }
+      .cancel-icon {
+        @apply absolute top-2 right-2;
+      }
     </style>
 
     <script>
@@ -78,10 +99,10 @@
       </div>
     </header>
 
-    <div class="bg-white md:-mt-56 top-border md:pt-56 mt-4 md:mt-0">
+    <div class="bg-white pt-4 mt-4 md:mt-0">
       <div class="max-w-2xl w-4/5 mx-auto">
         <button
-          class="bg-myYellow py-4 px-6 rounded-md text-base md:text-2xl font-semibold text-buttonText w-full gap-2 w-full mx-auto border border-yellowBorder"
+          class="bg-myYellow py-4 px-6 rounded-md text-base md:text-2xl font-semibold text-buttonText w-full gap-2 w-full mx-auto border border-yellowBorder open-btn"
         >
           YES, I WANT THIS INSANE DEAL! &gt;&gt;
         </button>
@@ -836,5 +857,62 @@
         </div>
       </div>
     </div>
+
+    <!-- MODAL -->
+    <div class="modal hidden bg-white text-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6 cancel-icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18 18 6M6 6l12 12"
+        />
+      </svg>
+
+      <div class="text-3xl text-[#323232] font-bold">
+        Tell Us How to Get In Touch
+      </div>
+      <div class="text-center font-semibold text-myYellow">
+        Complete the form below.
+      </div>
+
+      <form action="" class="grid gap-4 my-6">
+        <div class="form-control white">
+          <input type="text" placeholder="First Name" required id="name" />
+          <img src="./img/name.svg" alt="" class="" />
+        </div>
+        <div class="form-control white">
+          <input type="email" placeholder="Email Address" required id="email" />
+          <img src="./img/mail.svg" alt="" class="" />
+        </div>
+        <div class="text-center">
+          <button
+            type="submit"
+            class="text-black py-3 px-6 bg-myYellow text-xl font-semibold mt-6 rounded-lg"
+          >
+            Click To Sign Up
+          </button>
+        </div>
+      </form>
+
+      <div class="font-light text-sm mt-4">
+        Your privacy is important to us and we will not spam you. By signing up
+        you'll also receive access to business tips and exclusive offers. View
+        our Privacy Policy.
+      </div>
+    </div>
+
+    <!-- OVERLAY -->
+    <div
+      class="fixed left-0 top-0 bg-black/30 w-screen h-screen z-10 overlay hidden"
+    ></div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
