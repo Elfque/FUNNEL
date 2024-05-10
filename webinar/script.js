@@ -1,22 +1,3 @@
-const menuBtn = document.querySelector(".menu-button");
-const menuMain = document.querySelector(".menu-md");
-
-menuBtn?.addEventListener("click", () => {
-  menuMain.classList.toggle("active");
-});
-
-const tit = document.querySelectorAll(".tit");
-
-tit?.forEach((item) => {
-  item.addEventListener("click", () => {
-    const parent = item.parentElement;
-
-    const answer = parent.querySelector(".detail");
-    item.classList.toggle("bg-blue-300");
-    answer.classList.toggle("active");
-  });
-});
-
 const modal = document.querySelector(".modal");
 const btnOpen = document.querySelectorAll(".open-btn");
 const overlay = document.querySelector(".overlay");
@@ -36,25 +17,44 @@ const closeModal = () => {
 overlay?.addEventListener("click", closeModal);
 closeBtn?.addEventListener("click", closeModal);
 
-let options = {
-  root: document.querySelector("#scrollArea"),
-  rootMargin: "0px",
-  threshold: 0.9,
-};
+// COUNTDOWN
+const hourContainer = document.querySelector(".hour");
+const minuteContainer = document.querySelector(".minute");
+const secondContainer = document.querySelector(".second");
 
-const target = document.querySelector("header");
-const navbar = document.querySelector(".navbar");
+const duration = 24 * 60 * 60 * 1000;
 
-const callback = (entries) => {
-  const [entry] = entries;
+// Set the end time by adding the duration to the current time
+const endTime = new Date().getTime() + duration;
 
-  if (entry.intersectionRatio < 0.9) {
-    navbar?.classList.add("bg-neutral-800");
-  } else {
-    navbar?.classList.remove("bg-neutral-800");
+// Update the countdown every second
+const countdownInterval = setInterval(updateCountdown, 1000);
+
+function updateCountdown() {
+  // Get the current time
+  const currentTime = new Date().getTime();
+
+  // Calculate the remaining time
+  const remainingTime = endTime - currentTime;
+
+  // Check if the countdown has reached zero
+  if (remainingTime <= 0) {
+    clearInterval(countdownInterval);
+    document.getElementById("timer").innerHTML = "Countdown expired";
+    return;
   }
-  // console.log(entry);
-};
 
-let observer = new IntersectionObserver(callback, options);
-observer.observe(target);
+  // Calculate hours, minutes, and seconds
+  const hours = Math.floor(remainingTime / (1000 * 60 * 60));
+  const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+  hourContainer.textContent = hours;
+  minuteContainer.textContent = minutes;
+  secondContainer.textContent = seconds;
+
+  // Display the remaining time
+  document.getElementById(
+    "timer"
+  ).innerHTML = `${hours}h ${minutes}m ${seconds}s`;
+}
